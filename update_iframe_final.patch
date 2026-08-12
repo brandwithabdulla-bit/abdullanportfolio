@@ -1,0 +1,36 @@
+--- assets/css/style.css
++++ assets/css/style.css
+@@ -2108,23 +2108,13 @@
+ }
+ 
+ .cs-reel-iframe {
+     position: absolute;
+-    width: 540px;
+-    height: 960px;
++    width: 400px;
++    height: 888px;
+     top: 50%;
+     left: 50%;
+-    transform: translate(-50%, -50%) scale(0.77);
++    transform: translate(-50%, -50%) scale(1.35);
+     border: none;
+     pointer-events: auto;
+-}
+-
+-@media (max-width: 900px) {
+-    .cs-reel-iframe {
+-        transform: translate(-50%, -50%) scale(0.9);
+-    }
+-}
+-@media (max-width: 768px) {
+-    .cs-reel-iframe {
+-        transform: translate(-50%, -50%) scale(1.1);
+-    }
+-}
+-@media (max-width: 500px) {
+-    .cs-reel-iframe {
+-        transform: translate(-50%, -50%) scale(1.25);
+-    }
+ }
+ 
+ .cs-shield {

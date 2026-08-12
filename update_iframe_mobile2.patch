@@ -1,0 +1,16 @@
+--- assets/css/style.css
++++ assets/css/style.css
+@@ -2127,7 +2127,11 @@
+ }
+ 
+ @media (max-width: 768px) {
+     .cs-reel-iframe {
+-        transform: translate(-50%, -50%) scale(1.15);
++        transform: translate(-50%, -50%) scale(1.1);
++    }
++}
++@media (max-width: 500px) {
++    .cs-reel-iframe {
++        transform: translate(-50%, -50%) scale(1.2);
+     }
+ }

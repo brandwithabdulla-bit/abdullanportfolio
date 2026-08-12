@@ -1,0 +1,15 @@
+--- assets/css/style.css
++++ assets/css/style.css
+@@ -2126,6 +2126,12 @@
+     border: none;
+     pointer-events: auto;
+ }
++
++@media (max-width: 768px) {
++    .cs-reel-iframe {
++        transform: translate(-50%, -50%) scale(1.15);
++    }
++}
+ 
+ .cs-shield {
+     position: absolute;

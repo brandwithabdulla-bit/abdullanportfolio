@@ -1,0 +1,15 @@
+--- assets/css/style.css
++++ assets/css/style.css
+@@ -2098,12 +2098,11 @@
+ .cs-reel-iframe {
+     position: absolute;
+     width: 155%;
+-    height: auto;
+-    aspect-ratio: 9/16;
++    height: 800px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border: none;
+     pointer-events: auto;
+ }

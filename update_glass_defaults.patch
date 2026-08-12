@@ -1,0 +1,11 @@
+--- assets/js/glass.js
++++ assets/js/glass.js
+@@ -16,7 +16,7 @@
+             brightness: 50,
+             opacity: 0.93,
+             blur: 11,
+-            displace: 0.7,
++            displace: 0,
+             backgroundOpacity: 0,
+             saturation: 1,
+             distortionScale: -180,
