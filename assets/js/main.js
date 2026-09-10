@@ -2,12 +2,13 @@
  * Main JavaScript
  * Handles global interactions and scroll effects
  */
-
+console.error("DEBUG FATAL: MAIN.JS HAS STARTED PARSING AND EXECUTING!");
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Header Scroll Effect
-    const header = document.getElementById('header');
+    const header = document.querySelector('.header');
     
     window.addEventListener('scroll', () => {
+        if (!header) return;
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
@@ -83,6 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, { threshold: 0.1 });
+
+        const aboutSection = document.getElementById('about');
 
         const renderProjects = () => {
             csGrid.innerHTML = ''; // Clear grid
@@ -279,12 +282,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 csRevealObserver.observe(article);
             });
 
-            // Handle View More button visibility
+            // Show/Hide About section based on whether we are expanded
+            if (aboutSection) {
+                if (currentLimit > 9) {
+                    aboutSection.style.display = 'none';
+                } else {
+                    aboutSection.style.display = ''; // Reset to default
+                }
+            }
+
+            // Handle View More button visibility and state
             if (viewMoreBtn) {
                 if (filtered.length > currentLimit) {
                     viewMoreBtn.style.display = 'block';
+                    viewMoreBtn.innerHTML = 'View More Projects ↗';
+                    viewMoreBtn.classList.remove('cs-home-btn');
                 } else {
-                    viewMoreBtn.style.display = 'none';
+                    // Show "Home" button when all items in this category are displayed and we've expanded
+                    if (currentLimit > 9) {
+                        viewMoreBtn.style.display = 'block';
+                        viewMoreBtn.innerHTML = '← Go Back Home';
+                        viewMoreBtn.classList.add('cs-home-btn');
+                    } else {
+                        // All items shown initially (e.g. category has <= 9 items)
+                        viewMoreBtn.style.display = 'none';
+                    }
                 }
             }
             
@@ -297,8 +319,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // View More click handler
         if (viewMoreBtn) {
             viewMoreBtn.addEventListener('click', () => {
-                currentLimit += 9; // Load 9 more
-                renderProjects();
+                if (!window.location.pathname.endsWith('work.html')) {
+                    window.location.href = 'work.html';
+                    return;
+                }
+                if (viewMoreBtn.classList.contains('cs-home-btn')) {
+                    // Redirect to service section in home page
+                    window.location.href = 'index.html#services';
+                } else {
+                    currentLimit += 9; // Load 9 more
+                    renderProjects();
+                }
             });
         }
 
@@ -321,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const hash = window.location.hash.replace('#', '');
             if (['all', 'web', 'performance', 'social'].includes(hash)) {
                 handleFilterChange(hash);
-            } else if (!hash) {
+            } else {
                 handleFilterChange('all');
             }
         };
@@ -373,4 +404,118 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(equalizeFooterHeights, 100);
         window.addEventListener('resize', equalizeFooterHeights);
     }
+    
+    // FAQ Accordion Script
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        const body = item.querySelector('.accordion-body');
+        
+        header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all
+            accordionItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.accordion-body').style.height = '0px';
+                otherItem.querySelector('.acc-icon').textContent = '+';
+            });
+            
+            // Open clicked if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+                body.style.height = body.scrollHeight + 'px';
+                item.querySelector('.acc-icon').textContent = '×';
+            }
+        });
+    });
 });
+
+    // 7. Footer Cinematic Scroll Animation
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+        const footerAnims = document.querySelectorAll('.footer-anim');
+        if (footerAnims.length > 0) {
+            gsap.from(footerAnims, {
+                scrollTrigger: {
+                    trigger: '.site-footer',
+                    start: 'top 85%',
+                },
+                y: 60,
+                opacity: 0,
+                duration: 1.2,
+                stagger: 0.15,
+                ease: 'power3.out'
+            });
+        }
+    }
+
+    // 8. Footer Live Time (Kerala IST)
+    function updateFooterTime() {
+        const el = document.getElementById('footer-location-time');
+        if (!el) return;
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString('en-US', {
+            timeZone: 'Asia/Kolkata',
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
+        });
+        el.innerHTML = `Kerala &nbsp; ${timeStr} &nbsp; 28°C ☁`;
+    }
+    setInterval(updateFooterTime, 1000);
+    updateFooterTime();
+
+    // Initialize DriftWall
+    console.log("MARKER 1: main.js END REACHED");
+    const driftWallContainer = document.getElementById('mentorship-driftwall');
+    console.log("MARKER 2: container =", !!driftWallContainer, "typeof DriftWall =", typeof window.DriftWall);
+    
+    if (driftWallContainer && typeof window.DriftWall !== 'undefined') {
+        console.log("MARKER 3: Inside init if block");
+        let finalItems = [];
+        if (typeof portfolioProjects !== 'undefined' && portfolioProjects.length > 0) {
+            finalItems = portfolioProjects
+                .filter(p => p.image && !p.image.includes('placeholder'))
+                .map(p => ({ image: p.image, title: p.title, href: p.link }));
+        }
+        
+        if (finalItems.length === 0) {
+            finalItems = [
+                { image: 'https://picsum.photos/id/1015/600/400', title: 'Peaks', href: 'https://example.com/one' },
+                { image: 'https://picsum.photos/id/1025/600/400', title: 'Pup', href: 'https://example.com/two' },
+                { image: 'https://picsum.photos/id/1039/600/400', title: 'Falls', href: 'https://example.com/three' },
+            ];
+        }
+
+        console.log("MARKER 4: About to call new DriftWall");
+        try {
+            new window.DriftWall(driftWallContainer, {
+                items: finalItems,
+                columns: 5,
+                tileWidth: 200,
+                tileHeight: 132,
+                gap: 18,
+                tilt: 16,
+                turn: -14,
+                perspective: 1200,
+                depth: 120,
+                speed: 42,
+                direction: 'up',
+                variance: 0.45,
+                parallax: 0.6,
+                lift: 64,
+                fade: 0.6,
+                dim: 0.55,
+                overlayColor: '#060010',
+                radius: 14,
+                roll: 0,
+                pauseOnHover: false,
+                grayscale: false
+            });
+            console.log("MARKER 5: DriftWall init SUCCESS, child count:", driftWallContainer.children.length);
+        } catch (e) {
+            console.log("MARKER ERROR:", e);
+        }
+    }
+

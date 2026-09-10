@@ -1,0 +1,100 @@
+.btn-dark-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #FFF;
+  font-family: var(--font-primary);
+  font-size: 0.9rem; /* Increased size */
+  font-weight: 600;
+  padding: 14px 28px; /* Increased size */
+  border-radius: 999px;
+  text-decoration: none;
+  align-self: flex-start;
+  margin-top: 16px; /* Moved slightly downward to visually align better */
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-dark-pill:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* Center: Portrait */
+.about-center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.portrait-hero-card {
+  position: relative;
+  border-radius: 28px; /* Scaled down border radius */
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5; /* Forces the exact compact proportion */
+  background-color: #000;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border: 1px solid rgba(93, 24, 235, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.portrait-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portrait-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 120px rgba(93, 24, 235, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.portrait-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 60px 32px 32px 32px;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.portrait-caption-text h3 {
+  color: #FFF;
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.portrait-caption-text p {
+  color: #AAA;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.portrait-caption-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
