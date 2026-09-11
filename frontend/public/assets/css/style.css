@@ -2257,10 +2257,10 @@ a {
    IMAGE-MATCHED MODERN FOOTER (FAIZUR STYLE FOR ABDULLA)
    ========================================================================== */
 .modern-faizur-footer {
-    background-color: #E8E4DC; /* matches about section backdrop */
+    background-color: #000000;
     padding: 20px 40px 60px 40px;
     width: 100%;
-    color: #111111;
+    color: #ffffff;
     font-family: var(--font-primary);
 }
 
@@ -2271,15 +2271,15 @@ a {
 }
 
 .footer-card-inner {
-    background-color: #F3F1EC;
+    background-color: #111111;
     border-radius: 44px;
     padding: 60px 64px 36px 64px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Top Section 4 Grid Columns */
@@ -2296,7 +2296,7 @@ a {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.35;
-    color: #111111;
+    color: #f3f4f6;
     letter-spacing: -0.02em;
     max-width: 320px;
     margin: 0;
@@ -2311,7 +2311,7 @@ a {
 .col-heading {
     font-size: 0.85rem;
     font-weight: 500;
-    color: #777777;
+    color: #9ca3af;
     margin-bottom: 18px;
     display: block;
 }
@@ -2328,14 +2328,14 @@ a {
 
 .footer-nav-list a {
     font-size: 0.92rem;
-    color: #666666;
+    color: #9ca3af;
     text-decoration: none;
     transition: color 0.2s ease;
     font-weight: 400;
 }
 
 .footer-nav-list a:hover {
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Col 3: Social Links Grid */
@@ -2350,13 +2350,13 @@ a {
     align-items: center;
     gap: 8px;
     font-size: 0.88rem;
-    color: #333333;
+    color: #d1d5db;
     text-decoration: none;
     transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .social-item:hover {
-    color: #000000;
+    color: #ffffff;
     opacity: 0.8;
 }
 
@@ -2366,6 +2366,7 @@ a {
     justify-content: center;
     width: 18px;
     height: 18px;
+    filter: brightness(0) invert(1);
 }
 
 /* Col 4: Action Blocks */
@@ -2394,7 +2395,7 @@ a {
 .cta-title {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #111111;
+    color: #ffffff;
     letter-spacing: -0.01em;
 }
 
@@ -2418,8 +2419,8 @@ a {
 }
 
 .dark-arrow {
-    background-color: #111111;
-    color: #FFFFFF;
+    background-color: #ffffff;
+    color: #111111;
 }
 
 .cta-subtitle {
@@ -2433,7 +2434,7 @@ a {
 }
 
 .text-muted {
-    color: #777777;
+    color: #9ca3af;
 }
 
 /* Middle Big Display Typography */
@@ -2450,7 +2451,7 @@ a {
     font-size: clamp(6rem, 19.5vw, 24rem);
     font-weight: 800;
     letter-spacing: -0.06em;
-    color: #111111;
+    color: #ffffff;
     display: block;
     width: 100%;
     transform: scaleY(0.92);
@@ -2465,9 +2466,9 @@ a {
     justify-content: space-between;
     align-items: center;
     font-size: 0.8rem;
-    color: #888888;
+    color: #9ca3af;
     padding-top: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .bottom-left {
@@ -2477,20 +2478,20 @@ a {
 }
 
 .footer-sub-link {
-    color: #888888;
+    color: #9ca3af;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-sub-link:hover {
-    color: #111111;
+    color: #ffffff;
 }
 
 .bottom-right {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #777777;
+    color: #9ca3af;
     font-weight: 500;
 }
 

@@ -12,7 +12,7 @@ export default function Page() {
 
     {/*  1. HERO SECTION  */}
     <section className="pf-section pf-bg-dark" style={{ borderBottom: "none" }}>
-      <div className="pf-section-inner" style={{ paddingTop: "50px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
+      <div className="pf-section-inner" style={{ paddingTop: "160px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
         <div className="fade-in-up">
             <div className="pf-eyebrow">WEBSITES × SEO × DIGITAL GROWTH</div>
             <h1 className="pf-hero-title">Building Brands<br />That <span>Get Found</span></h1>
@@ -36,6 +36,10 @@ export default function Page() {
                     <div className="pf-stat-num">90%</div>
                     <div className="pf-stat-label">Performance Improved</div>
                 </div>
+                <div>
+                    <div className="pf-stat-num">80+ LAKHS</div>
+                    <div className="pf-stat-label">Profits Generated</div>
+                </div>
             </div>
         </div>
 
@@ -57,27 +61,27 @@ export default function Page() {
         </div>
         
         <div className="pf-marquee-track" style={{ marginLeft: "300px" }}>
-            {/*  Repeated Logo Set  */}
+            {/* Repeated Logo Set */}
             <div style={{ display: "flex", gap: "80px", alignItems: "center", paddingRight: "80px" }}>
-                <img src="/assets/images/64f693e5dc798cedf9cdac47_Asset 4@8x 1-top.png" style={{ height: "35px", filter: "brightness(0) opacity(0.8)" }} />
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>Allison Resort</span>
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>breezeland</span>
-                <img src="/assets/images/64f899eab46bd2c842817ee8_image 6-top.png" style={{ height: "35px", filter: "brightness(0) opacity(0.8)" }} />
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>Silent Slopes</span>
+                <img src="/assets/logo/adzone.webp" alt="Adzone" style={{ height: "40px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/hexad.webp" alt="Hexad" style={{ height: "35px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/mountain-vibes.webp" alt="Mountain Vibes" style={{ height: "50px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/peralserence.webp" alt="Pearl Serene" style={{ height: "40px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/silent_1.webp" alt="Silent Slopes" style={{ height: "45px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
             </div>
             <div style={{ display: "flex", gap: "80px", alignItems: "center", paddingRight: "80px" }}>
-                <img src="/assets/images/64f693e5dc798cedf9cdac47_Asset 4@8x 1-top.png" style={{ height: "35px", filter: "brightness(0) opacity(0.8)" }} />
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>Allison Resort</span>
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>breezeland</span>
-                <img src="/assets/images/64f899eab46bd2c842817ee8_image 6-top.png" style={{ height: "35px", filter: "brightness(0) opacity(0.8)" }} />
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>Silent Slopes</span>
+                <img src="/assets/logo/adzone.webp" alt="Adzone" style={{ height: "40px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/hexad.webp" alt="Hexad" style={{ height: "35px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/mountain-vibes.webp" alt="Mountain Vibes" style={{ height: "50px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/peralserence.webp" alt="Pearl Serene" style={{ height: "40px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/silent_1.webp" alt="Silent Slopes" style={{ height: "45px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
             </div>
             <div style={{ display: "flex", gap: "80px", alignItems: "center", paddingRight: "80px" }}>
-                <img src="/assets/images/64f693e5dc798cedf9cdac47_Asset 4@8x 1-top.png" style={{ height: "35px", filter: "brightness(0) opacity(0.8)" }} />
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>Allison Resort</span>
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>breezeland</span>
-                <img src="/assets/images/64f899eab46bd2c842817ee8_image 6-top.png" style={{ height: "35px", filter: "brightness(0) opacity(0.8)" }} />
-                <span style={{ fontSize: "1.5rem", fontWeight: "700" }}>Silent Slopes</span>
+                <img src="/assets/logo/adzone.webp" alt="Adzone" style={{ height: "40px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/hexad.webp" alt="Hexad" style={{ height: "35px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/mountain-vibes.webp" alt="Mountain Vibes" style={{ height: "50px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/peralserence.webp" alt="Pearl Serene" style={{ height: "40px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
+                <img src="/assets/logo/silent_1.webp" alt="Silent Slopes" style={{ height: "45px", mixBlendMode: "multiply", filter: "grayscale(1) opacity(0.6)", objectFit: "contain" }} />
             </div>
         </div>
     </div>
@@ -95,7 +99,7 @@ export default function Page() {
             </div>
 
             <div className="fade-in-up delay-1" style={{ display: "flex", gap: "40px", alignItems: "center" }}>
-                <div className="pf-card-list">
+                <div className="pf-card-list" style={{ background: "#fff", padding: "40px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.04)", border: "1px solid rgba(0,0,0,0.03)" }}>
                     <div className="pf-list-item">
                         <div className="pf-icon-circle">💼</div>
                         <div>
@@ -189,29 +193,160 @@ export default function Page() {
             <p className="pf-hero-desc" style={{ margin: "0", maxWidth: "400px", textAlign: "right" }}>Real businesses. Real results. Explore some of the websites and campaigns I've worked on.</p>
         </div>
         
-        <div className="pf-work-grid">
-            <div className="pf-work-card">
-                <img src="/assets/images/placeholder_resort.webp" className="pf-work-img" />
-                <div className="pf-work-overlay">
-                    <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>PencilHub</h3>
-                    <div className="pf-stat-label">Website Development</div>
-                    <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+        <div style={{ marginTop: "60px", width: "100%", overflow: "hidden", maskImage: "linear-gradient(to right, transparent, black 2%, black 98%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 2%, black 98%, transparent)" }}>
+            <div className="pf-marquee-track" style={{ animationDuration: "40s" }}>
+                {/* Set 1 */}
+                <div style={{ display: "flex", gap: "30px", paddingRight: "30px" }}>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/amberwoods.png" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Amberwoods</h3>
+                            <div className="pf-stat-label">Website + Marketing</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/pencil-hub.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Pencil Hub</h3>
+                            <div className="pf-stat-label">Website Development</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/silent-slopes.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Silent Slopes</h3>
+                            <div className="pf-stat-label">Website + SEO</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/skillage.png" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Skillage</h3>
+                            <div className="pf-stat-label">UI/UX Design</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/mountain-vibes.webp" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Mountain Vibes</h3>
+                            <div className="pf-stat-label">Performance Marketing</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/partho.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Partho</h3>
+                            <div className="pf-stat-label">Branding + Web</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="pf-work-card">
-                <img src="/assets/images/placeholder_hotel.webp" className="pf-work-img" />
-                <div className="pf-work-overlay">
-                    <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Skillogo</h3>
-                    <div className="pf-stat-label">Website Development</div>
-                    <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                {/* Set 2 */}
+                <div style={{ display: "flex", gap: "30px", paddingRight: "30px" }}>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/amberwoods.png" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Amberwoods</h3>
+                            <div className="pf-stat-label">Website + Marketing</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/pencil-hub.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Pencil Hub</h3>
+                            <div className="pf-stat-label">Website Development</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/silent-slopes.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Silent Slopes</h3>
+                            <div className="pf-stat-label">Website + SEO</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/skillage.png" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Skillage</h3>
+                            <div className="pf-stat-label">UI/UX Design</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/mountain-vibes.webp" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Mountain Vibes</h3>
+                            <div className="pf-stat-label">Performance Marketing</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/partho.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Partho</h3>
+                            <div className="pf-stat-label">Branding + Web</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="pf-work-card">
-                <img src="/assets/images/placeholder_landscape.webp" className="pf-work-img" />
-                <div className="pf-work-overlay">
-                    <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Silent Slopes Resort</h3>
-                    <div className="pf-stat-label">Website + SEO</div>
-                    <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                {/* Set 3 */}
+                <div style={{ display: "flex", gap: "30px", paddingRight: "30px" }}>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/amberwoods.png" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Amberwoods</h3>
+                            <div className="pf-stat-label">Website + Marketing</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/pencil-hub.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Pencil Hub</h3>
+                            <div className="pf-stat-label">Website Development</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/silent-slopes.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Silent Slopes</h3>
+                            <div className="pf-stat-label">Website + SEO</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/skillage.png" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Skillage</h3>
+                            <div className="pf-stat-label">UI/UX Design</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/mountain-vibes.webp" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Mountain Vibes</h3>
+                            <div className="pf-stat-label">Performance Marketing</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
+                    <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
+                        <img src="/assets/projects1/partho.jpg" className="pf-work-img" />
+                        <div className="pf-work-overlay">
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Partho</h3>
+                            <div className="pf-stat-label">Branding + Web</div>
+                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -399,7 +534,7 @@ export default function Page() {
       </div>
     </section>
         {/*  Recent Case Studies Section  */}
-    <section id="work" className="case-studies-section">
+    <section id="work" className="case-studies-section" style={{ paddingTop: "20px", marginTop: "-60px", paddingBottom: "20px" }}>
       <div className="pf-section-inner">
         <div className="case-studies-container">
             {/*  Header  */}

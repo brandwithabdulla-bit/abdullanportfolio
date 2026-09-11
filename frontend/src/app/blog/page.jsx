@@ -70,7 +70,7 @@ export default function Page() {
 
             {/*  Card 5  */}
             <Link href="/blog/local-seo-wayanad" className="blog-card-ext fade-in-up delay-1">
-                <img src="/assets/images/google-ux-design-professional-theuncoder-1.webp" alt="Google Helps Local Business" />
+                <img src="/assets/thumbnail/how-googlehelps-local-business.webp" alt="Google Helps Local Business" />
                 <div className="blog-card-content">
                     <h3>How Google Helps Local Businesses in Wayanad</h3>
                     <div className="blog-meta">

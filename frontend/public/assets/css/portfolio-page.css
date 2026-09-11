@@ -144,6 +144,7 @@
 
 .pf-hero-stats {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     margin-top: 60px;
     padding-top: 40px;
@@ -174,7 +175,7 @@
     overflow: hidden;
     height: 100%;
     min-height: 500px;
-    background: url('../images/about/hero_section_1788514234205.png') no-repeat center center / cover;
+    background: url('../mentors/Untitled-design-20.webp') no-repeat center center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,7 +184,7 @@
 .pf-hero-card-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.4));
 }
 
 .pf-cursive-accent {

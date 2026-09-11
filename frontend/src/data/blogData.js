@@ -79,7 +79,7 @@ export const blogs = [
         title: "How Google Helps Local Businesses in Wayanad",
         author: "Muhammed Abdulla",
         date: "30/07/2025",
-        image: "/assets/images/google-ux-design-professional-theuncoder-1.webp",
+        image: "/assets/thumbnail/how-googlehelps-local-business.webp",
         content: `
             <h2>The Power of the Local Pack</h2>
             <p>When tourists visit Wayanad, the very first thing they do is pull out out their phone and search for "cafes near me" or "best places to stay." Google's localized algorithms are designed explicitly to serve these high-intent searches.</p>

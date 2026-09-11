@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="modern-faizur-footer" style={{ backgroundColor: "#D6D1C6" }}>
+    <footer id="footer" className="modern-faizur-footer" style={{ backgroundColor: "#000000" }}>
         <div className="footer-card-wrapper">
             <div className="footer-card-inner">
 
@@ -22,7 +22,7 @@ export default function Footer() {
                         <ul className="footer-nav-list">
                             <li><a href="/about">Bio</a></li>
                             <li><a href="/#work">Work</a></li>
-                            <li><a href="/#services">Services</a></li>
+                            <li><a href="/services">Services</a></li>
                             <li><a href="/#contact">Contact</a></li>
                         </ul>
                     </div>
