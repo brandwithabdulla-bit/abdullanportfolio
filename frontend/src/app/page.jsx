@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState, Suspense } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import StudentTestimonials from '@/components/StudentTestimonials';
 
 export default function Page() {
   useEffect(() => {
@@ -69,9 +70,10 @@ export default function Page() {
     const initReel = () => {
         if(typeof window.ScrollReelController !== 'undefined' && document.getElementById('testimonial-reel-container')) {
             const tsData = [
-                { quote: "Abdulla transformed our entire brand. His attention to detail is staggering. He completely understood the assignment from the very first consultation.", author: "Jane Doe, CEO", image: "assets/images/partho-5.webp" },
-                { quote: "A master class in design aesthetic. I highly recommend him to anyone looking for premium service.", author: "John Smith, Founder", image: "assets/images/silent.webp" },
-                { quote: "The highest quality design work we've seen in our industry. Outstanding execution and visionary layout formatting.", author: "Alice Wright, VP Marketing", image: "assets/images/mountain.webp" }
+                { quote: "Abdulla helped us from the beginning of our growth journey. From social media and ads to content production, everything was handled smoothly. He understood our vision and helped us build a stronger online presence. Happy to have worked with him.", author: "Siraj, Founder, Silent Slopes", image: "assets/client_testimonials/siraj.webp" },
+                { quote: "Abdulla is a very approachable and reliable digital marketing expert. He is always ready to help and provides support in every aspect of marketing. Easy to reach, highly knowledgeable, and truly dedicated to his work. Strongly recommended.", author: "Abid, Co-Founder, Breezland", image: "assets/client_testimonials/abid.webp" },
+                { quote: "I highly recommend Abdulla for his exceptional digital marketing services. Their team created an outstanding ad campaign for my business that exceeded my expectations. Thank you, for your outstanding work.", author: "Jomi, Founder, The Pearl Serene", image: "assets/client_testimonials/jomi.webp" },
+                { quote: "Excellent digital marketing service by Abdulla and team. The team is professional, creative, and result-oriented. They helped boost my brand visibility, improved engagement, and delivered measurable growth. Highly recommended! Since 1 year we are taking service from them. Anytime approachable.", author: "Rehna, Founder, Allison Resort", image: "assets/client_testimonials/rehna.webp" }
             ];
             new window.ScrollReelController(document.getElementById('testimonial-reel-container'), tsData);
         } else {
@@ -111,14 +113,12 @@ export default function Page() {
                     </div>
 
                     <h1 className="hero-headline" style={{ fontSize: "clamp(2.5rem, 4.5vw, 4rem)" }}>
-                        Perf<span style={{ color: "var(--color-primary)" }}>o</span>rmance <i>Marketer</i><br />
-                        in Kerala
+                        Perf<span style={{ color: "var(--color-primary)" }}>o</span>rmance Marketer<br />
+                        <span style={{ color: "#22C55E" }}>in Kerala</span><br />
+                        <span style={{ color: "#6633EE", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}>&amp; Web Developer</span>
                     </h1>
                     <p className="hero-sub fade-in-up delay-2">
-                        I'm Muhammed Abdulla, a Performance Marketer & Web Developer In Kerala. Passionate about
-                        crafting high-converting digital experiences where aesthetic design meets data-driven growth.
-                        Whether it's scaling modern brands or designing sleek functionality, I build solutions that
-                        don't just look good—they perform.
+                        I'm a Performance Marketer in Kerala & Web Developer helping brands, resorts & creators achieve digital growth through AI-driven marketing, branding, and web development while mentoring aspiring professionals to build valuable, high-income digital skills.
                     </p>
 
                     <div className="hero-cta-group fade-in delay-3">
@@ -267,7 +267,7 @@ export default function Page() {
 
             {/*  View More Button  */}
             <div className="cs-view-more-container">
-                <button id="cs-view-more-btn" className="cs-view-more-btn">View More Projects ↗</button>
+                <button id="cs-view-more-btn" className="cs-view-more-btn">View More Projects â†—</button>
             </div>
         </div>
     </section>
@@ -294,30 +294,6 @@ export default function Page() {
 
             <div className="scroll-stack-scroller" id="services-stack">
                 <div className="scroll-stack-inner">
-                    {/*  SEO  */}
-                    <div className="scroll-stack-card">
-                        <div className="expand-bg"
-                            style={{ background: "url('assets/images/services/seo_bg.png') center/cover no-repeat", opacity: "0.15" }}>
-                        </div>
-                        <div className="expand-content-container"
-                            style={{ flexDirection: "column", alignItems: "flex-start", gap: "20px" }}>
-                            <div className="expand-icon" style={{ boxShadow: "0 4px 15px rgba(50,235,79,0.4)", margin: "0" }}>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    stroke="var(--color-accent-green)" strokeWidth="2.5" strokeLinecap="round"
-                                    strokeLinejoin="round">
-                                    <circle cx="11" cy="11" r="8"></circle>
-                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                </svg>
-                            </div>
-                            <div className="expand-text stack-text">
-                                <h3>Search Engine Optimization (SEO)</h3>
-                                <p>When people in Wayanad search for businesses on Google, do they find you? I ensure
-                                    your website appears at the top when customers are ready to buy. Using local
-                                    strategies, I get your business noticed by the right audience.</p>
-                            </div>
-                        </div>
-                    </div>
-
                     {/*  SMM  */}
                     <div className="scroll-stack-card">
                         <div className="expand-bg"
@@ -335,32 +311,8 @@ export default function Page() {
                                 </svg>
                             </div>
                             <div className="expand-text stack-text">
-                                <h3>Social Media Marketing (SMM)</h3>
-                                <p>Your customers are scrolling through Facebook and Instagram every day – let's make
-                                    sure they see your business. From eye-catching posts to engaging stories, I keep
-                                    your brand highly active across Wayanad’s social scene.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/*  SEM  */}
-                    <div className="scroll-stack-card">
-                        <div className="expand-bg"
-                            style={{ background: "url('assets/images/services/sem_bg.png') center/cover no-repeat", opacity: "0.15" }}>
-                        </div>
-                        <div className="expand-content-container"
-                            style={{ flexDirection: "column", alignItems: "flex-start", gap: "20px" }}>
-                            <div className="expand-icon" style={{ boxShadow: "0 4px 15px rgba(228,255,2,0.4)", margin: "0" }}>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9EAC00"
-                                    strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                </svg>
-                            </div>
-                            <div className="expand-text stack-text">
-                                <h3>Search Engine Marketing (SEM)</h3>
-                                <p>Sometimes you need customers right now. I set up Google Ads that show up exactly when
-                                    people search for your services. I make your budget work exponentially harder by
-                                    aggressively targeting only serious buyers with high intent.</p>
+                                <h3>SMM</h3>
+                                <p>Your customers are scrolling through social media every day â€“ let's make sure they see your business. From eye-catching posts to engaging stories, I keep your brand highly active and relevant.</p>
                             </div>
                         </div>
                     </div>
@@ -381,9 +333,49 @@ export default function Page() {
                             </div>
                             <div className="expand-text stack-text">
                                 <h3>Premium Web Development</h3>
-                                <p>Your website needs to look immaculate and work lightning fast. I build modern,
-                                    glassmorphism-inspired websites that load quickly and are heavily optimized to turn
-                                    your Wayanad visitors into long-lasting customers.</p>
+                                <p>Your website needs to look immaculate and work lightning fast. I build modern, visually stunning websites that load quickly and are heavily optimized to turn visitors into long-lasting customers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/*  Content Production  */}
+                    <div className="scroll-stack-card">
+                        <div className="expand-bg"
+                            style={{ background: "url('assets/images/services/seo_bg.png') center/cover no-repeat", opacity: "0.15" }}>
+                        </div>
+                        <div className="expand-content-container"
+                            style={{ flexDirection: "column", alignItems: "flex-start", gap: "20px" }}>
+                            <div className="expand-icon" style={{ boxShadow: "0 4px 15px rgba(50,235,79,0.4)", margin: "0" }}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--color-accent-green)" strokeWidth="2.5" strokeLinecap="round"
+                                    strokeLinejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                </svg>
+                            </div>
+                            <div className="expand-text stack-text">
+                                <h3>Content Production</h3>
+                                <p>From high-quality videos to stunning visual graphics, we produce engaging content that captures your brand's essence and connects with your target audience to drive meaningful engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/*  Travel Industry Marketing  */}
+                    <div className="scroll-stack-card">
+                        <div className="expand-bg"
+                            style={{ background: "url('assets/images/services/sem_bg.png') center/cover no-repeat", opacity: "0.15" }}>
+                        </div>
+                        <div className="expand-content-container"
+                            style={{ flexDirection: "column", alignItems: "flex-start", gap: "20px" }}>
+                            <div className="expand-icon" style={{ boxShadow: "0 4px 15px rgba(228,255,2,0.4)", margin: "0" }}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9EAC00"
+                                    strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M22 12h-4l-3-9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+                            <div className="expand-text stack-text">
+                                <h3>Travel Industry Business Growth & Marketing</h3>
+                                <p>Helping resorts, destinations, and travel brands scale their bookings through targeted digital campaigns, visually rich content, and comprehensive growth strategies tailored for the hospitality sector.</p>
                             </div>
                         </div>
                     </div>
@@ -495,7 +487,7 @@ export default function Page() {
                 </div>
 
                 <a href="#about-page" className="btn-dark-pill">
-                    More About Me ↗
+                    More About Me â†—
                 </a>
             </div>
 
@@ -587,12 +579,12 @@ export default function Page() {
                 <div className="services-dark-card">
                     <h4 className="services-title">What I Do Best ✦</h4>
                     <div className="services-pill-grid">
-                        <div className="service-pill">Performance Marketing <span className="arrow">↗</span></div>
-                        <div className="service-pill">SEO <span className="arrow">↗</span></div>
-                        <div className="service-pill">Web Development <span className="arrow">↗</span></div>
-                        <div className="service-pill">Branding <span className="arrow">↗</span></div>
-                        <div className="service-pill">Content Strategy <span className="arrow">↗</span></div>
-                        <div className="service-pill">Production <span className="arrow">↗</span></div>
+                        <div className="service-pill">Performance Marketing <span className="arrow">â†—</span></div>
+                        <div className="service-pill">SEO <span className="arrow">â†—</span></div>
+                        <div className="service-pill">Web Development <span className="arrow">â†—</span></div>
+                        <div className="service-pill">Branding <span className="arrow">â†—</span></div>
+                        <div className="service-pill">Content Strategy <span className="arrow">â†—</span></div>
+                        <div className="service-pill">Production <span className="arrow">â†—</span></div>
                     </div>
                 </div>
             </div>
@@ -606,25 +598,23 @@ export default function Page() {
             <div className="marquee-container">
                 <div className="client-marquee-track">
                     {/*  Original Set  */}
-                    <img src="assets/images/peralserence.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/allison.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/silent.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/dd.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/partho-5.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/adzone.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/hexad.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/mountain.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/royal.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/adzone.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/career-2.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/hexad.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/mountain-vibes.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/partho-5.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/pastel.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/peralserence.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/silent_1.webp" alt="Client Logo" className="client-logo-marquee" />
                     {/*  Duplicate Set for Infinite Scroll  */}
-                    <img src="assets/images/peralserence.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/allison.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/silent.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/dd.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/partho-5.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/adzone.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/hexad.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/mountain.webp" alt="Client Logo" className="client-logo-marquee" />
-                    <img src="assets/images/royal.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/adzone.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/career-2.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/hexad.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/mountain-vibes.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/partho-5.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/pastel.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/peralserence.webp" alt="Client Logo" className="client-logo-marquee" />
+                    <img src="assets/logo/silent_1.webp" alt="Client Logo" className="client-logo-marquee" />
                 </div>
             </div>
         </div>
@@ -641,7 +631,7 @@ export default function Page() {
     {/*  Blog / Insights  */}
 
     {/*  Custom 6x4 Grid Section  */}
-    <section className="pf-section pf-bg-light" style={{ backgroundColor: "#F8F5F0", paddingBottom: "100px", color: "#111" }}>
+    <section className="pf-section pf-bg-light" style={{ backgroundColor: "#F8F5F0", paddingBottom: "20px", color: "#111" }}>
         <style dangerouslySetInnerHTML={{ __html: `
             .custom-grid-card {
                 border-radius: 12px;
@@ -689,9 +679,10 @@ export default function Page() {
 
         <div
             style={{ paddingTop: "80px", paddingBottom: "100px", paddingLeft: "5%", paddingRight: "5%", maxWidth: "1440px", margin: "0 auto", textAlign: "center" }}>
-            <div className="pf-eyebrow">BRAND</div>
+            <div className="pf-eyebrow">Trusted By</div>
+            <p style={{ fontSize: "1.1rem", color: "#666", marginBottom: "10px", fontStyle: "italic" }}>&ldquo;Fewer projects. More attention. Real results.&rdquo;</p>
             <h2 className="pf-hero-title" style={{ fontSize: "2.5rem", marginBottom: "40px" }}>Featured <span
-                    style={{ color: "var(--pf-accent)" }}>Projects</span></h2>
+                    style={{ color: "var(--pf-accent)" }}>BRANDS</span></h2>
 
             <div className="custom-six-col-grid">
                 <div className="custom-grid-card" style={{ background: "#DEFE00", color: "#000" }}><img src="/assets/logo/2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
@@ -723,7 +714,7 @@ export default function Page() {
     </section>
 
     {/*  Vanilla Scroll Reel Initializer Node  */}
-    <div style={{ backgroundColor: "#F8F5F0", paddingBottom: "100px", paddingLeft: "5%", paddingRight: "5%", display: "flex", justifyContent: "center" }}>
+    <div style={{ backgroundColor: "#F8F5F0", paddingBottom: "30px", paddingLeft: "5%", paddingRight: "5%", display: "flex", justifyContent: "center" }}>
         <div id="testimonial-reel-container" style={{ width: "100%" }}></div>
     </div>
 
@@ -735,7 +726,7 @@ export default function Page() {
                     MENTORSHIP & IMPACT
                 </div>
                 <h2 className="about-premium-headline"
-                    style={{ textAlign: "left", margin: "20px 0", color: "#000", lineHeight: "1.1" }}>I’ve mentored
+                    style={{ textAlign: "left", margin: "20px 0", color: "#000", lineHeight: "1.1" }}>I've mentored
                     <span className="inline-icon-wrapper"
                         style={{ background: "#4ADE80", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", verticalAlign: "middle", margin: "0 6px", boxShadow: "0 8px 20px rgba(74,222,128,0.3)" }}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5"
@@ -754,7 +745,7 @@ export default function Page() {
                 </h2>
                 <p className="bio-intro"
                     style={{ textAlign: "left", marginLeft: "0", maxWidth: "800px", padding: "0", color: "#666", fontWeight: "400", fontSize: "1.1rem", lineHeight: "1.6" }}>
-                    Over the years, I’ve mentored 500+ students in content creation, production, digital marketing, and
+                    Over the years, I've mentored 500+ students in content creation, production, digital marketing, and
                     skill development. Every student has a different journey, and I focus on helping them build
                     practical skills, gain confidence, and turn learning into real opportunities.</p>
             </div>
@@ -767,390 +758,62 @@ export default function Page() {
                     style={{ display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gap: "24px", width: "100%", height: "120%", marginTop: "-10%", transform: "rotate(-6deg) scale(1.2)", WebkitMaskImage: "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)", maskImage: "radial-gradient(ellipse at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 80%)" }}>
                     {/*  Column 1 (up)  */}
                     <div className="t-col-up" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/0_NQUsGXQ2AqNLAy_u-removebg-preview.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/0_NQUsGXQ2AqNLAy_u-removebg-preview_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/2.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/2_1.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/3d-seo-optimization-rocketpowered-marketing-strategies-web-social-media_1121250-183579-removebg-preview.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/3d-seo-optimization-rocketpowered-marketing-strategies-web-social-media_1121250-183579-removebg-preview_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/0_NQUsGXQ2AqNLAy_u-removebg-preview.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Untitled-design-14.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/2.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/2_1.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/3d-seo-optimization-rocketpowered-marketing-strategies-web-social-media_1121250-183579-removebg-preview.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/3d-seo-optimization-rocketpowered-marketing-strategies-web-social-media_1121250-183579-removebg-preview_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-12.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-17.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/dd.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-13.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-19.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-12.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
                     </div>
-
                     {/*  Column 2 (down)  */}
                     <div className="t-col-down" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-1024x247.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-1024x247_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-300x72.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-300x72_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-1024x247.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-1024x247_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-300x72.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101-300x72_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1-e1779769571101.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-13.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-18.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-20.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-14.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-13.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-18.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
                     </div>
-
                     {/*  Column 3 (up)  */}
                     <div className="t-col-up" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-icon-1-300x300.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-icon-1-300x300_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-icon-1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/adzone.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-full-type-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-icon-1-300x300.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-icon-1-300x300_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/abdhu-icon-1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/adzone.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-14.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/dd.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-15.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-12.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-14.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/dd.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
                     </div>
-
                     {/*  Column 4 (down)  */}
                     <div className="t-col-down" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/adzone_1.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/allison.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/allison_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/b09438c8-8966-478c-b455-4b3f0e75bab6-removebg-preview.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/b09438c8-8966-478c-b455-4b3f0e75bab6-removebg-preview_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-and-Yellow-Bold-Illustrative-Social-Media-Growth-YouTube-Thumbnail-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/adzone_1.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/allison.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/allison_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/b09438c8-8966-478c-b455-4b3f0e75bab6-removebg-preview.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/b09438c8-8966-478c-b455-4b3f0e75bab6-removebg-preview_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-and-Yellow-Bold-Illustrative-Social-Media-Growth-YouTube-Thumbnail-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-15.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-19.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-17.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-20.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-15.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-19.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
                     </div>
-
                     {/*  Column 5 (up)  */}
                     <div className="t-col-up" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-and-Yellow-Bold-Illustrative-Social-Media-Growth-YouTube-Thumbnail-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-and-Yellow-Bold-Illustrative-Social-Media-Growth-YouTube-Thumbnail.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-Creative-What-is-Hustle-Culture-YouTube-Thumbnail-1-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-Creative-What-is-Hustle-Culture-YouTube-Thumbnail-1-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-Creative-What-is-Hustle-Culture-YouTube-Thumbnail-1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-White-Red-Simple-Modern-Elegant-Video-How-To-YouTube-Thumbnail-1-1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-and-Yellow-Bold-Illustrative-Social-Media-Growth-YouTube-Thumbnail-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-and-Yellow-Bold-Illustrative-Social-Media-Growth-YouTube-Thumbnail.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-Creative-What-is-Hustle-Culture-YouTube-Thumbnail-1-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-Creative-What-is-Hustle-Culture-YouTube-Thumbnail-1-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-Creative-What-is-Hustle-Culture-YouTube-Thumbnail-1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-White-Red-Simple-Modern-Elegant-Video-How-To-YouTube-Thumbnail-1-1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-17.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-13.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-20.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-18.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-17.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-13.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
                     </div>
-
                     {/*  Column 6 (down)  */}
                     <div className="t-col-down" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-White-Red-Simple-Modern-Elegant-Video-How-To-YouTube-Thumbnail-1-1_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Blue-And-Purple-Gradient-Modern-The-Importance-Of-Content-Marketing-YouTube-Thumbnail-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Blue-And-Purple-Gradient-Modern-The-Importance-Of-Content-Marketing-YouTube-Thumbnail-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Blue-And-Purple-Gradient-Modern-The-Importance-Of-Content-Marketing-YouTube-Thumbnail.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/career-1.png" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/career-1_1.png"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Black-White-Red-Simple-Modern-Elegant-Video-How-To-YouTube-Thumbnail-1-1_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Blue-And-Purple-Gradient-Modern-The-Importance-Of-Content-Marketing-YouTube-Thumbnail-1024x576.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Blue-And-Purple-Gradient-Modern-The-Importance-Of-Content-Marketing-YouTube-Thumbnail-1024x576_1.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/Blue-And-Purple-Gradient-Modern-The-Importance-Of-Content-Marketing-YouTube-Thumbnail.webp"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/career-1.png" style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                loading="lazy" />
-                        </div>
-                        <div
-                            style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}>
-                            <img src="assets/images/career-1_1.png"
-                                style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                        </div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-18.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-12.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-14.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/dd.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-15.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
+                        <div style={{ background: "rgba(0,0,0,0.04)", borderRadius: "20px", outline: "1px solid rgba(0,0,0,0.05)", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", overflow: "hidden" }}><img src="assets/mentors/Untitled-design-18.webp" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" /></div>
                     </div>
                 </div>
             </div>
         </div>
+        <StudentTestimonials />
     </section>
 
     {/*  Featured Brands Section  */}
@@ -1172,22 +835,37 @@ export default function Page() {
             </div>
             <div className="blog-grid">
                 <a href="https://brandwithabdulla.com/how-to-start-freelancing-in-2026/" target="_blank"
-                    className="blog-card fade-in-up delay-1">
-                    <div className="blog-date">09/07/2026</div>
-                    <h3>How to Start Freelancing in 2026 – Everything You Need to Know</h3>
-                    <span className="read-more text-green">Read More <span className="arrow">&nearr;</span></span>
+                    className="blog-card fade-in-up delay-1" style={{ padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ width: '100%', height: '220px', overflow: 'hidden' }}>
+                        <img src="assets/images/Yellow-and-Black-Personal-Branding-Masterclass-YouTube-Thumbnail.webp" alt="Freelancing Thumbnail" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                    </div>
+                    <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                        <div className="blog-date">09/07/2026</div>
+                        <h3 style={{ marginBottom: 'auto' }}>How to Start Freelancing in 2026 - Everything You Need to Know</h3>
+                        <span className="read-more text-green" style={{ marginTop: '16px' }}>Read More <span className="arrow">&nearr;</span></span>
+                    </div>
                 </a>
                 <a href="https://brandwithabdulla.com/how-to-become-a-content-creator-in-2026/" target="_blank"
-                    className="blog-card fade-in-up delay-2">
-                    <div className="blog-date">16/05/2026</div>
-                    <h3>How to Become a Content Creator in 2026</h3>
-                    <span className="read-more text-purple">Read More <span className="arrow">&nearr;</span></span>
+                    className="blog-card fade-in-up delay-2" style={{ padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ width: '100%', height: '220px', overflow: 'hidden' }}>
+                        <img src="assets/images/Black-Creative-What-is-Hustle-Culture-YouTube-Thumbnail-1.webp" alt="Content Creation Thumbnail" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                    </div>
+                    <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                        <div className="blog-date">16/05/2026</div>
+                        <h3 style={{ marginBottom: 'auto' }}>How to Become a Content Creator in 2026</h3>
+                        <span className="read-more text-purple" style={{ marginTop: '16px' }}>Read More <span className="arrow">&nearr;</span></span>
+                    </div>
                 </a>
                 <a href="https://brandwithabdulla.com/best-digital-marketing-expert-in-wayanad/" target="_blank"
-                    className="blog-card fade-in-up delay-3">
-                    <div className="blog-date">06/08/2025</div>
-                    <h3>Best Digital Marketing Expert in Wayanad</h3>
-                    <span className="read-more text-yellow">Read More <span className="arrow">&nearr;</span></span>
+                    className="blog-card fade-in-up delay-3" style={{ padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                    <div style={{ width: '100%', height: '220px', overflow: 'hidden' }}>
+                        <img src="assets/images/Blue-And-Purple-Gradient-Modern-The-Importance-Of-Content-Marketing-YouTube-Thumbnail.webp" alt="Digital Marketing Thumbnail" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                    </div>
+                    <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                        <div className="blog-date">06/08/2025</div>
+                        <h3 style={{ marginBottom: 'auto' }}>Best Digital Marketing Expert in Wayanad</h3>
+                        <span className="read-more text-yellow" style={{ marginTop: '16px' }}>Read More <span className="arrow">&nearr;</span></span>
+                    </div>
                 </a>
             </div>
         </div>
@@ -1211,45 +889,65 @@ export default function Page() {
                             </path>
                         </svg></span><span className="cs-highlight">Questions</span></h2>
             </div>
-            <div className="accordion-list fade-in-up delay-1">
+            <div className="accordion-list fade-in-up delay-1" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '24px', alignItems: 'start' }}>
                 <div className="accordion-item">
-                    <button className="accordion-header">Why hire a local digital marketer in Wayanad? <span
-                            className="acc-icon">+</span></button>
+                    <button className="accordion-header">01. What does a performance marketer do? <span className="acc-icon">+</span></button>
                     <div className="accordion-body">
-                        <div className="acc-content">Living and working right here in Wayanad gives me an edge that
-                            outsiders simply can’t match. I wake up every morning understanding exactly what challenges
-                            local businesses face – from competing with big city companies to reaching tourists during
-                            peak seasons.</div>
+                        <div className="acc-content">A performance marketer uses data-driven strategies to run and optimize digital campaigns with measurable goals such as leads, sales, bookings, and conversions. The focus is on improving results and maximizing return on ad spend (ROAS).</div>
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button className="accordion-header">How much does digital marketing cost in Wayanad? <span
-                            className="acc-icon">+</span></button>
+                    <button className="accordion-header">02. Which advertising platforms do you work with? <span className="acc-icon">+</span></button>
                     <div className="accordion-body">
-                        <div className="acc-content">Most businesses in Wayanad spend between ₹12,000 to ₹80,000 monthly on
-                            digital marketing, depending on their goals. I’ve designed packages specifically for local
-                            businesses – from basic SEO for ₹15,000/month to comprehensive campaigns for larger
-                            enterprises.</div>
+                        <div className="acc-content">I work with platforms such as Google Ads, Meta Ads (Facebook & Instagram), YouTube Ads, and other relevant advertising channels depending on your business and target audience.</div>
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button className="accordion-header">Do you run Google Ads or Meta Ads for Tourism? <span
-                            className="acc-icon">+</span></button>
+                    <button className="accordion-header">03. How soon can I expect to see results? <span className="acc-icon">+</span></button>
                     <div className="accordion-body">
-                        <div className="acc-content">Yes! As an SEO expert in Wayanad specializing in travel marketing, I
-                            focus on seasonal campaigns, Google My Business optimization, and social media content that
-                            showcases Wayanad’s natural beauty. My tourism clients typically see 40-60% increase in
-                            bookings within 6 months.</div>
+                        <div className="acc-content">Results depend on your industry, budget, offer, audience, and campaign goals. Some campaigns can generate results within days, while others need several weeks of testing and optimization to reach their potential.</div>
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button className="accordion-header">Do you guarantee immediate results? <span
-                            className="acc-icon">+</span></button>
+                    <button className="accordion-header">04. How much do your performance marketing services cost? <span className="acc-icon">+</span></button>
                     <div className="accordion-body">
-                        <div className="acc-content">I focus on transparent reporting. I don’t make overnight success
-                            promises. Real SEO takes 3-4 months to show solid results, and I’ll walk you through every
-                            step. Clients typically see 50-70% increase in website traffic within 3 months and 30-40%
-                            growth in leads within 6 months.</div>
+                        <div className="acc-content">Pricing depends on the scope of work, advertising budget, number of platforms, and campaign complexity. I offer customized packages based on your specific business goals rather than a one-size-fits-all price.</div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button className="accordion-header">05. Can you guarantee leads or sales? <span className="acc-icon">+</span></button>
+                    <div className="accordion-body">
+                        <div className="acc-content">No ethical marketer can guarantee a specific number of sales or leads. What I can guarantee is a structured, data-driven approach with continuous testing, optimization, and transparent reporting focused on improving campaign performance.</div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button className="accordion-header">06. What do you need from me to get started? <span className="acc-icon">+</span></button>
+                    <div className="accordion-body">
+                        <div className="acc-content">I’ll typically need information about your business, target audience, products or services, goals, previous campaign data, website or landing page access, and advertising account access where required.</div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button className="accordion-header">07. Do you create ad creatives and copy? <span className="acc-icon">+</span></button>
+                    <div className="accordion-body">
+                        <div className="acc-content">Yes. I can help with ad concepts, copy, hooks, creative direction, and variations designed for testing. If professional photography or video production is required, that can be coordinated separately.</div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button className="accordion-header">08. Do you work with small businesses and startups? <span className="acc-icon">+</span></button>
+                    <div className="accordion-body">
+                        <div className="acc-content">Yes. Performance marketing can be particularly useful for businesses that want to grow while keeping their marketing measurable. Campaigns and budgets can be structured according to your current stage and goals.</div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button className="accordion-header">09. Can you optimize my website or landing page for better conversions? <span className="acc-icon">+</span></button>
+                    <div className="accordion-body">
+                        <div className="acc-content">Yes. I can identify conversion issues and recommend improvements to your landing pages, website structure, messaging, calls-to-action, forms, and overall user journey to help turn more visitors into customers.</div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <button className="accordion-header">10. Why should I hire you as my performance marketer? <span className="acc-icon">+</span></button>
+                    <div className="accordion-body">
+                        <div className="acc-content">I focus on measurable business growth, not simply running advertisements. By combining data analysis, creative testing, audience research, and continuous optimization, I aim to improve campaign efficiency, increase conversions, and maximize your marketing ROI.</div>
                     </div>
                 </div>
             </div>
@@ -1500,3 +1198,4 @@ export default function Page() {
     </>
   );
 }
+

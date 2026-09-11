@@ -2646,7 +2646,7 @@ a {
     background-color: #F5F2EC;
 }
 .timeline-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .timeline-grid {
@@ -2716,7 +2716,7 @@ a {
 .mentorship-intro {
     text-align: left;
     margin-bottom: 60px;
-    max-width: 800px;
+    max-width: 1200px;
 }
 .testimonial-masonry {
     display: grid;
@@ -2810,7 +2810,7 @@ a {
     background-color: #E8E4DC;
 }
 .faq-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .accordion-list {
@@ -3255,3 +3255,4 @@ a {
 .mentorship-grid-container img:hover {
     transform: scale(1.03);
 }
+

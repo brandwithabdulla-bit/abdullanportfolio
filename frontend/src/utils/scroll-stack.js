@@ -28,7 +28,7 @@ export function initScrollStack() {
     });
 
     if (cards.length > 0) {
-        cards[cards.length - 1].style.marginBottom = '120vh';
+        cards[cards.length - 1].style.marginBottom = '40vh';
     }
 
     const calculateProgress = (scrollTop, start, end) => {
@@ -55,7 +55,9 @@ export function initScrollStack() {
             const triggerStart = cardTop - stackPositionPx - (itemStackDistance * i);
             const triggerEnd = cardTop - scaleEndPositionPx;
             const pinStart = cardTop - stackPositionPx - (itemStackDistance * i);
-            const pinEnd = endElementTop - (containerHeight / 2);
+            const lastCard = cards[cards.length - 1];
+            const lastCardBottom = stackPositionPx + (itemStackDistance * (cards.length - 1)) + lastCard.offsetHeight;
+            const pinEnd = endElementTop - lastCardBottom - 60;
 
             const scaleProgress = calculateProgress(scrollTop, triggerStart, triggerEnd);
             const targetScale = baseScale + (i * itemScale);

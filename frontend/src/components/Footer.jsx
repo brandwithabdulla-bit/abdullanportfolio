@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="modern-faizur-footer">
+    <footer className="modern-faizur-footer" style={{ backgroundColor: "#D6D1C6" }}>
         <div className="footer-card-wrapper">
             <div className="footer-card-inner">
 

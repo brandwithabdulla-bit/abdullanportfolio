@@ -3,6 +3,9 @@ import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '../../../public/assets/css/about-page.css';
+// import HowItWorks from '@/components/ui/how-it-works';
+import { Target, Search, MonitorPlay, Presentation, TrendingUp } from 'lucide-react';
+import { SkillShowcase } from '@/components/ui/skill-showcase';
 
 export default function Page() {
   useEffect(() => {
@@ -205,7 +208,7 @@ export default function Page() {
                 </div>
 
                 {/*  Right Visual  */}
-                <div className="ap-hero-visual fade-in-up delay-1">
+                <div className="ap-hero-visual fade-in-up delay-1" style={{ backgroundImage: "url('/assets/images/portrait.webp')", backgroundPosition: "center top" }}>
                     {/*  Floating Cards  */}
                     <div className="ap-floating-card ap-fc-1 parallax-item" data-speed="20">
                         <img src="/assets/images/about/strategy_card_1788516554454.png" alt="Strategy" />
@@ -249,7 +252,7 @@ export default function Page() {
 
                 <div className="ap-mission-cards">
                     <div className="ap-ms-card fade-in-up delay-1">
-                        <img src="/assets/images/about/strategy_card_1788516554454.png" alt="Communication" />
+                        <img src="/assets/mentors/Untitled-design-12.webp" alt="Communication" />
                         <div className="ap-ms-card-content">
                             <div className="ap-icon-circle">⚲</div>
                             <h3>Direct Communication</h3>
@@ -257,7 +260,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="ap-ms-card fade-in-up delay-2">
-                        <img src="/assets/images/about/execution_card_1788516569914.png" alt="Transparency" />
+                        <img src="/assets/mentors/Untitled-design-18.webp" alt="Transparency" />
                         <div className="ap-ms-card-content">
                             <div className="ap-icon-circle">⚡</div>
                             <h3>Transparent Reporting</h3>
@@ -265,7 +268,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="ap-ms-card fade-in-up delay-3">
-                        <img src="/assets/images/about/optimization_card_1788516586262.png" alt="Performance" />
+                        <img src="/assets/mentors/Untitled-design-19.webp" alt="Performance" />
                         <div className="ap-ms-card-content">
                             <div className="ap-icon-circle">◓</div>
                             <h3>Fast SEO & Custom Ads</h3>
@@ -418,46 +421,10 @@ export default function Page() {
             </div>
         </section>
 
-        {/*  4. Approach / Initiatives (LIGHT)  */}
-        <section id="approach" className="ap-approach">
-            <div className="ap-approach-container fade-in-up">
-                
-                <div className="ap-section-header">
-                    <span className="ap-mission-label"><div className="dot"></div> MY SKILLS</span>
-                </div>
-
-                <div className="ap-approach-grid-container">
-                    
-                    {/*  Left Grid (Pills layout)  */}
-                    <div className="ap-skills-layout">
-                        <div className="ap-skill-pill"><span>💻</span> Web Development</div>
-                        <div className="ap-skill-pill"><span>🎯</span> Brand Strategy</div>
-                        <div className="ap-skill-pill"><span>📱</span> Social Media Marketing</div>
-                        <div className="ap-skill-pill"><span>🔍</span> SEO Optimization</div>
-                        <div className="ap-skill-pill"><span>🚀</span> Performance Marketing</div>
-                        <div className="ap-skill-pill"><span>📈</span> Google Analytics</div>
-                        <div className="ap-skill-pill"><span>✍️</span> Content Marketing</div>
-                        <div className="ap-skill-pill"><span>🎨</span> Content Creation</div>
-                        <div className="ap-skill-pill"><span>🎥</span> Video Production</div>
-                    </div>
-
-                    {/*  Right Sticky Bar  */}
-                    <div className="ap-sidebar-sticky">
-                        <h2 style={{ lineHeight: "1.2" }}>Real Actions.<br />Real Impact.<br />A Better <span className="inline-icon-wrapper" style={{ background: "#0ED3B9", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", verticalAlign: "text-bottom", margin: "0 8px", boxShadow: "0 5px 15px rgba(14,211,185,0.3)" }}><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span> Future.</h2>
-                        <p>Need someone who can handle your digital marketing without the fluff? That’s me. Got questions about your website, social media, or online ads? Let's figure out what's holding you back.</p>
-                        <a href="/portfolio" className="read-more" style={{ color: "#000", fontWeight: "600", fontSize: "0.9rem" }}>View All Case Studies &rarr;</a>
-                        
-                        <div className="ap-subscribe-card">
-                            <h3>Get Your Free Marketing Growth Consultation</h3>
-                            <p>Whether you’re just starting out online or want to fix what’s not working, I’m here to help.</p>
-                            <div style={{ marginTop: "10px" }}>
-                                <a href="mailto:info@brandwithabdulla.com" style={{ display: "inline-block", padding: "10px 20px", background: "#000", color: "#fff", borderRadius: "999px", textDecoration: "none", fontWeight: "600", fontSize: "0.85rem" }}>Email Me &rarr;</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+        {/*  4. Approach / Initiatives (DARK CREME MINIMAL)  */}
+        <section id="approach" className="relative border-t z-10" style={{ backgroundColor: "#D6D1C6", borderColor: "#c2bcac", paddingTop: "140px", paddingBottom: "140px" }}>
+            <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 20px", display: "flex", justifyContent: "center", width: "100%" }}>
+                <SkillShowcase />
             </div>
         </section>
 

@@ -163,11 +163,19 @@ class ScrollReelController {
     const stage = this.container.querySelector('#sr-text-stage');
     
     // Create height-sizing ghost text and actual animating text
+    let ghostHTML = '<div class="sr-ghost-text" style="display: grid; visibility: hidden;">';
+    this.testimonials.forEach(t => {
+      ghostHTML += `
+        <div style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 19px;">
+          <p class="sr-quote">${t.quote}</p>
+          <p class="sr-author">${t.author}</p>
+        </div>
+      `;
+    });
+    ghostHTML += '</div>';
+
     stage.innerHTML = `
-      <div class="sr-ghost-text">
-        <p class="sr-quote">${current.quote}</p>
-        <p class="sr-author">${current.author}</p>
-      </div>
+      ${ghostHTML}
       <div class="sr-live-text ${this.exiting ? 'scroll-reel-exit' : ''}">
         <p class="sr-quote">${createCharSpans(current.quote, 0, this.charStaggerMs)}</p>
         <p class="sr-author">${createCharSpans(current.author, current.quote.length + 6, this.charStaggerMs)}</p>
