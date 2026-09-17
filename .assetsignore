@@ -1,0 +1,15 @@
+.git
+.git/**
+.github
+.github/**
+frontend
+frontend/**
+node_modules
+node_modules/**
+node-v20.17.0-win-x64
+node-v20.17.0-win-x64/**
+*.log
+.DS_Store
+wrangler.jsonc
+.gitignore
+.assetsignore
