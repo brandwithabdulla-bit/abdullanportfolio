@@ -1,0 +1,649 @@
+/* =====================================================================
+   SERVICES PAGE STYLES - Uncoder x Nizam Premium Design
+   Target: #F4F1ED Background, #6E38FF Purple Accent
+===================================================================== */
+
+:root {
+  --sp-bg: #F4F1ED;         /* Light Creme Background */
+  --sp-text: #111111;       /* Main text */
+  --sp-purple: #6E38FF;     /* Accent Purple */
+  --sp-purple-light: #F0E8FF;
+  --sp-gray-muted: #666666;
+  --sp-border: rgba(0,0,0,0.1);
+  --sp-card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--sp-bg) !important;
+}
+
+.sp-wrapper {
+  background-color: var(--sp-bg);
+  min-height: 100vh;
+  color: var(--sp-text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   GENERIC UTILITIES
+========================================= */
+.sp-section {
+  padding: 100px 5%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .sp-section { padding: 60px 4%; }
+}
+
+.sp-eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sp-gray-muted);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.sp-eyebrow::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: var(--sp-gray-muted);
+}
+
+.sp-headline {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 30px;
+}
+
+.sp-headline .purple-text {
+  color: var(--sp-purple);
+}
+
+.sp-btn-purple {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--sp-purple);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.sp-btn-purple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(110, 56, 255, 0.3);
+  color: #fff;
+}
+
+.sp-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--sp-text);
+  padding: 14px 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.sp-btn-ghost:hover {
+  opacity: 0.7;
+}
+
+/* =========================================
+   1. HERO SECTION
+========================================= */
+.sp-hero {
+  padding-top: 180px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .sp-hero {
+    padding-top: 140px;
+  }
+}
+
+.sp-eyebrow {
+  justify-content: center;
+}
+
+.sp-eyebrow::before {
+  display: none;
+}
+
+.sp-hero-desc {
+  font-size: 1.1rem;
+  color: var(--sp-gray-muted);
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .sp-hero-desc {
+    margin: 0 auto 40px auto;
+  }
+}
+
+.sp-hero-ctas {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-hero-visual {
+  position: relative;
+  width: 100%;
+}
+
+.sp-laptop-mock {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+}
+
+/* =========================================
+   2. SERVICES GRID
+========================================= */
+.sp-services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 900px) {
+  .sp-services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+.sp-services-header-right {
+  max-width: 320px;
+  font-size: 0.95rem;
+  color: var(--sp-gray-muted);
+  line-height: 1.5;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+@media (max-width: 900px) {
+  .sp-services-header-right {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.sp-purple-label {
+  color: var(--sp-purple);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sp-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 1024px) {
+  .sp-grid-3x2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .sp-grid-3x2 { grid-template-columns: 1fr; }
+}
+
+.sp-service-card {
+  background: var(--sp-card-bg);
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.sp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.sp-icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--sp-purple-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sp-purple);
+}
+
+.sp-card-number {
+  font-family: monospace;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.sp-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.sp-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.sp-pill {
+  background: var(--sp-bg);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--sp-gray-muted);
+  font-weight: 600;
+}
+
+.sp-card-desc {
+  font-size: 0.95rem;
+  color: var(--sp-gray-muted);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.sp-explore-link {
+  color: var(--sp-purple);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sp-explore-link:hover {
+  opacity: 0.8;
+}
+
+/* =========================================
+   3. MY PROCESS
+========================================= */
+.sp-process-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .sp-process-header { flex-direction: column; align-items: flex-start; gap:20px; }
+}
+
+.sp-timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sp-timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  border-top: 2px dashed rgba(110, 56, 255, 0.3); /* Dotted purple line */
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .sp-timeline {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .sp-timeline::before {
+    top: 0; left: 30px; bottom: 0; right: auto; height: 100%;
+    border-top: none;
+    border-left: 2px dashed rgba(110, 56, 255, 0.3);
+  }
+}
+
+.sp-timeline-item {
+  width: 14%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .sp-timeline-item {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+.sp-ti-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--sp-bg);
+  border: 2px solid var(--sp-purple);
+  color: var(--sp-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 0 0 10px var(--sp-bg);
+}
+
+@media (max-width: 900px) {
+  .sp-ti-circle { margin: 0; flex-shrink: 0; }
+}
+
+.sp-ti-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.sp-ti-desc {
+  font-size: 0.9rem;
+  color: var(--sp-gray-muted);
+  line-height: 1.5;
+}
+
+/* =========================================
+   4. IMPACT NUMBERS
+========================================= */
+.sp-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .sp-impact-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
+  .sp-impact-grid { grid-template-columns: 1fr; }
+}
+
+.sp-impact-card {
+  background: var(--sp-card-bg);
+  padding: 50px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.sp-impact-val {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--sp-text);
+  margin-bottom: 10px;
+  letter-spacing: -2px;
+}
+
+.sp-impact-lbl {
+  font-size: 0.95rem;
+  color: var(--sp-gray-muted);
+  font-weight: 600;
+}
+
+
+/* =========================================
+   5. CASE STUDIES
+========================================= */
+.sp-cs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .sp-cs-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .sp-cs-grid { grid-template-columns: 1fr; }
+}
+
+.sp-cs-card {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.sp-cs-img-wrap {
+  width: 100%;
+  aspect-ratio: 16/10;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.sp-cs-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sp-cs-card:hover .sp-cs-img {
+  transform: scale(1.05);
+}
+
+.sp-cs-label {
+  font-size: 0.75rem;
+  color: var(--sp-gray-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.sp-cs-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.sp-cs-metrics {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.sp-cm-pill {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--sp-purple-light);
+  color: var(--sp-purple);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* =========================================
+   6. FAQ SECTION
+========================================= */
+.sp-faq-section {
+  display: flex;
+  gap: 60px;
+}
+
+.sp-faq-left {
+  flex: 0 0 350px;
+}
+
+.sp-faq-right {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  align-content: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .sp-faq-section { 
+    flex-direction: column; 
+    gap: 30px;
+  }
+  .sp-faq-left {
+    flex: none;
+    width: 100%;
+  }
+  .sp-faq-left .sp-headline {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sp-faq-section {
+    gap: 20px;
+  }
+  .sp-faq-right { 
+    grid-template-columns: 1fr; 
+  }
+}
+
+.sp-faq-item {
+  border-bottom: 1px solid var(--sp-border);
+}
+
+.sp-faq-summary {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+  list-style: none; /* Hide default arrow */
+}
+
+.sp-faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.sp-faq-num {
+  color: var(--sp-purple);
+  font-family: monospace;
+  margin-right: 15px;
+}
+
+.sp-faq-title {
+  flex-grow: 1;
+}
+
+.sp-faq-icon {
+  color: var(--sp-purple);
+  font-weight: 300;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+details[open] .sp-faq-icon {
+  transform: rotate(45deg);
+}
+
+.sp-faq-content {
+  padding-bottom: 24px;
+  color: var(--sp-gray-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* =========================================
+   7. LETS TALK CTA
+========================================= */
+.sp-cta-section {
+  padding: 120px 5%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-top: 1px solid var(--sp-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .sp-cta-section { flex-direction: column; text-align: center; gap: 40px; }
+}
+
+.sp-cta-left h2 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.sp-cta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  max-width: 350px;
+}
+
+@media (max-width: 900px) {
+  .sp-cta-right { align-items: center; }
+}
+
+.sp-cta-p {
+  color: var(--sp-gray-muted);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}

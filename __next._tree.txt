@@ -1,0 +1,7 @@
+:HL["/_next/static/css/fddfb01dcc4c7cf2.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap","style"]
+:HL["/assets/css/style.css?v=56","style"]
+:HL["/assets/css/drift-wall.css?v=46","style"]
+:HL["/assets/css/global-scroll.css","style"]
+:HL["/assets/css/scroll-reel.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"xrHs6ijMqNwvSInasRrKl"}

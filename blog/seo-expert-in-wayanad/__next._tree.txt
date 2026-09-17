@@ -1,10 +1,9 @@
-:HL["/_next/static/chunks/0fknp9y7cq1ph.css","style"]
-:HL["/_next/static/chunks/16it_9u9ry73-.css","style"]
+:HL["/_next/static/css/fddfb01dcc4c7cf2.css","style"]
+:HL["/_next/static/css/3e3349cf3c9a8b20.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap","style"]
-:HL["/assets/css/style.css?v=50","style"]
+:HL["/assets/css/style.css?v=56","style"]
 :HL["/assets/css/drift-wall.css?v=46","style"]
 :HL["/assets/css/global-scroll.css","style"]
 :HL["/assets/css/scroll-reel.css","style"]
-:HL["/assets/images/abdhu-full-type-1024x576_1.webp","image"]
 :HL["/assets/images/Teal-Illustrated-Similarities-and-Differences-Math-Presentation.webp","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"blog","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"seo-expert-in-wayanad","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"D9_hwIsUKhbgCS-udqFl1"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"blog","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"seo-expert-in-wayanad","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"xrHs6ijMqNwvSInasRrKl"}

@@ -9,6 +9,8 @@ export function initGlassSurface(selector = '.header-inner', customOptions = {})
     const elements = document.querySelectorAll(selector);
 
     elements.forEach((el, index) => {
+        if (el.classList.contains('glass-surface')) return;
+        
         const uniqueId = `glass-surface-${index}-${Date.now()}`;
         const filterId = `glass-filter-${uniqueId}`;
         const redGradId = `red-grad-${uniqueId}`;

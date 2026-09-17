@@ -2,18 +2,22 @@
  * Main JavaScript
  * Handles global interactions and scroll effects
  */
-document.addEventListener('DOMContentLoaded', () => {
+window.initMainScripts = () => {
+    
     // 1. Header Scroll Effect
     const header = document.querySelector('.header');
     
-    window.addEventListener('scroll', () => {
-        if (!header) return;
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
+    if (!window._headerScrollBound) {
+        window.addEventListener('scroll', () => {
+            if (!header) return;
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        window._headerScrollBound = true;
+    }
 
     // 2. Marquee Infinite Scroll Clone (Optional dynamic calculation)
     // The current CSS animation handles the infinite loop using duplicated content.
@@ -34,23 +38,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 4. Scroll Reveal Animations
-    const fadeElements = document.querySelectorAll('.fade-up');
-    
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Reveal only once
-            }
+    // 4. Scroll Reveal Animations (Keep observer persistent, always query new elements)
+    if (!window._mainRevealObserver) {
+        window._mainRevealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Reveal only once
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
         });
-    }, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    });
+    }
     
-    fadeElements.forEach(el => revealObserver.observe(el));
+    document.querySelectorAll('.fade-up:not(.visible)').forEach(el => window._mainRevealObserver.observe(el));
 
     // 5. Back to Top Button
     const backToTopBtn = document.getElementById('backToTop');
@@ -318,13 +322,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // View More click handler
         if (viewMoreBtn) {
             viewMoreBtn.addEventListener('click', () => {
-                if (!window.location.pathname.endsWith('work.html')) {
-                    window.location.href = 'work.html';
+                if (!window.location.pathname.includes('/work')) {
+                    window.location.href = '/work';
                     return;
                 }
                 if (viewMoreBtn.classList.contains('cs-home-btn')) {
                     // Redirect to service section in home page
-                    window.location.href = 'index.html#services';
+                    window.location.href = '/#services';
                 } else {
                     currentLimit += 9; // Load 9 more
                     renderProjects();
@@ -428,7 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+};
 
     // 7. Footer Cinematic Scroll Animation
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {

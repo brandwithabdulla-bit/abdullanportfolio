@@ -106,6 +106,8 @@ a {
   border: 1px solid var(--color-border);
   border-radius: 100px;
   padding: 6px 24px;
+  position: relative;
+  z-index: 10;
 }
 
 .logo {
@@ -113,6 +115,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .logo img {
@@ -626,6 +630,7 @@ a {
 
 @media (max-width: 1100px) {
   .main-nav { display: none; }
+  .header-actions { display: none; }
   .mobile-toggle { display: flex; }
   .hero-container { padding: 120px 40px 60px 40px; }
 }
@@ -933,6 +938,8 @@ a {
 
 /* Right: Stats & Services */
 .about-stats-col {
+  justify-content: space-between;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -940,6 +947,9 @@ a {
 }
 
 .stats-2x2-grid {
+  gap: 12px;
+  margin-bottom: 12px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px; /* Tightened from 16px */
@@ -1003,6 +1013,8 @@ a {
 .text-lime { color: #9EAC00; } /* Darkened lime for contrast on white */
 
 .services-dark-card {
+  padding: 24px;
+
   background-color: #0A0A0A;
   border-radius: 20px;
   padding: 24px; /* Increased */
@@ -1026,6 +1038,9 @@ a {
 }
 
 .service-pill {
+  padding: 8px 12px;
+  font-size: 0.8rem;
+
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -1764,6 +1779,8 @@ a {
     .cs-perf-card {
         padding: 24px;
         gap: 24px;
+        height: auto !important;
+        min-height: max-content;
     }
     .cs-perf-header {
         flex-direction: column;
@@ -1777,6 +1794,8 @@ a {
     .cs-perf-body {
         flex-direction: column;
         gap: 24px;
+        height: auto !important;
+        min-height: max-content;
     }
     .cs-perf-image {
         width: 100%;
@@ -1794,6 +1813,8 @@ a {
     .cs-perf-content {
         flex: none;
         width: 100%;
+        height: auto !important;
+        min-height: max-content;
     }
     .cs-perf-stats-row {
         flex-direction: column;
@@ -1801,6 +1822,9 @@ a {
     }
     .cs-perf-stat-box {
         width: 100%;
+    }
+    .cs-perf-verdict-box {
+        margin-top: 10px;
     }
 }
 
@@ -2058,6 +2082,8 @@ a {
 @media (max-width: 768px) {
     .cs-content-card {
         padding: 24px;
+        height: auto !important;
+        min-height: max-content;
     }
     .cs-content-header {
         flex-direction: column;
@@ -2247,10 +2273,10 @@ a {
    IMAGE-MATCHED MODERN FOOTER (FAIZUR STYLE FOR ABDULLA)
    ========================================================================== */
 .modern-faizur-footer {
-    background-color: #E8E4DC; /* matches about section backdrop */
+    background-color: #E6DFD3;
     padding: 20px 40px 60px 40px;
     width: 100%;
-    color: #111111;
+    color: #ffffff;
     font-family: var(--font-primary);
 }
 
@@ -2261,15 +2287,15 @@ a {
 }
 
 .footer-card-inner {
-    background-color: #F3F1EC;
+    background-color: #111111;
     border-radius: 44px;
     padding: 60px 64px 36px 64px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Top Section 4 Grid Columns */
@@ -2286,10 +2312,27 @@ a {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.35;
-    color: #111111;
+    color: #f3f4f6;
     letter-spacing: -0.02em;
     max-width: 320px;
     margin: 0;
+}
+
+.footer-email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-email-link:hover {
+    color: #5D18EB;
+    transform: translateX(2px);
 }
 
 /* Common Column Styles */
@@ -2301,7 +2344,7 @@ a {
 .col-heading {
     font-size: 0.85rem;
     font-weight: 500;
-    color: #777777;
+    color: #9ca3af;
     margin-bottom: 18px;
     display: block;
 }
@@ -2318,14 +2361,14 @@ a {
 
 .footer-nav-list a {
     font-size: 0.92rem;
-    color: #666666;
+    color: #9ca3af;
     text-decoration: none;
     transition: color 0.2s ease;
     font-weight: 400;
 }
 
 .footer-nav-list a:hover {
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Col 3: Social Links Grid */
@@ -2340,13 +2383,13 @@ a {
     align-items: center;
     gap: 8px;
     font-size: 0.88rem;
-    color: #333333;
+    color: #d1d5db;
     text-decoration: none;
     transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .social-item:hover {
-    color: #000000;
+    color: #ffffff;
     opacity: 0.8;
 }
 
@@ -2356,6 +2399,7 @@ a {
     justify-content: center;
     width: 18px;
     height: 18px;
+    filter: brightness(0) invert(1);
 }
 
 /* Col 4: Action Blocks */
@@ -2384,7 +2428,7 @@ a {
 .cta-title {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #111111;
+    color: #ffffff;
     letter-spacing: -0.01em;
 }
 
@@ -2408,8 +2452,8 @@ a {
 }
 
 .dark-arrow {
-    background-color: #111111;
-    color: #FFFFFF;
+    background-color: #ffffff;
+    color: #111111;
 }
 
 .cta-subtitle {
@@ -2423,7 +2467,7 @@ a {
 }
 
 .text-muted {
-    color: #777777;
+    color: #9ca3af;
 }
 
 /* Middle Big Display Typography */
@@ -2440,7 +2484,7 @@ a {
     font-size: clamp(6rem, 19.5vw, 24rem);
     font-weight: 800;
     letter-spacing: -0.06em;
-    color: #111111;
+    color: #ffffff;
     display: block;
     width: 100%;
     transform: scaleY(0.92);
@@ -2455,9 +2499,9 @@ a {
     justify-content: space-between;
     align-items: center;
     font-size: 0.8rem;
-    color: #888888;
+    color: #9ca3af;
     padding-top: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .bottom-left {
@@ -2467,20 +2511,20 @@ a {
 }
 
 .footer-sub-link {
-    color: #888888;
+    color: #9ca3af;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-sub-link:hover {
-    color: #111111;
+    color: #ffffff;
 }
 
 .bottom-right {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #777777;
+    color: #9ca3af;
     font-weight: 500;
 }
 
@@ -2519,7 +2563,7 @@ a {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  height: max-content;
+  height: auto;
   min-height: 250px;
   width: 100%;
   margin: 0;
@@ -2636,7 +2680,7 @@ a {
     background-color: #F5F2EC;
 }
 .timeline-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .timeline-grid {
@@ -2706,7 +2750,7 @@ a {
 .mentorship-intro {
     text-align: left;
     margin-bottom: 60px;
-    max-width: 800px;
+    max-width: 1200px;
 }
 .testimonial-masonry {
     display: grid;
@@ -2800,7 +2844,7 @@ a {
     background-color: #E8E4DC;
 }
 .faq-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .accordion-list {
@@ -3244,4 +3288,292 @@ a {
 /* Hover transform for all images */
 .mentorship-grid-container img:hover {
     transform: scale(1.03);
+}
+
+
+/* --- Mobile Responsive Fixes for Services & Performance Cards --- */
+@media (max-width: 768px) {
+    body, html {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+    }
+    
+    /* Performance Marketing Fixes */
+    .cs-perf-card, .case-studies-container, .cs-grid {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .cs-perf-title, .cs-perf-verdict-text p, .cs-perf-desc {
+        word-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+    }
+    .cs-perf-card {
+        padding: 24px 20px 32px 20px !important;
+        margin: 0 !important;
+        height: auto !important;
+        min-height: max-content !important;
+        overflow: visible !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .cs-perf-body {
+        height: auto !important;
+        min-height: max-content !important;
+        display: flex !important;
+        flex-direction: column !important;
+        flex: 1 1 auto !important;
+    }
+    .cs-perf-content {
+        height: auto !important;
+        min-height: max-content !important;
+        flex: 1 1 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .cs-perf-stat-box {
+        min-width: 0 !important;
+        padding: 10px !important;
+    }
+    .cs-perf-image, .cs-perf-image img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .cs-perf-verdict-box {
+        padding: 16px !important;
+        margin-top: auto !important;
+        height: auto !important;
+        min-height: max-content !important;
+        display: flex !important;
+    }
+
+    /* Scroll Stack Services Fixes */
+    .scroll-stack-inner {
+        padding: 40px 0 !important;
+        min-height: auto !important;
+    }
+    .scroll-stack-scroller {
+        margin-top: 20px !important;
+    }
+    .scroll-stack-card {
+        height: auto !important;
+        min-height: 0 !important;
+        border-radius: 40px !important;
+        margin-bottom: 60px !important;
+    }
+    .scroll-stack-card .expand-content-container {
+        padding: 40px 30px !important;
+    }
+    .scroll-stack-card .expand-text {
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: none !important;
+        opacity: 1 !important;
+        margin-top: 20px !important;
+        overflow: visible !important;
+    }
+    .scroll-stack-card .expand-text h3 {
+        white-space: normal !important;
+        word-wrap: break-word;
+        line-height: 1.3;
+        margin-top: 16px;
+        font-size: 1.6rem !important;
+    }
+    .scroll-stack-card .expand-text p {
+        width: 100% !important;
+        max-width: 100% !important;
+        white-space: normal !important;
+        font-size: 1rem !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+}
+
+/* --- Premium Mobile Menu Overlay --- */
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0B0B10;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 100px 24px 40px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s;
+}
+.mobile-nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mobile-nav-links > a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    -webkit-text-stroke: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.25s ease;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.mobile-nav-overlay.active .mobile-nav-links > a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-nav-links > a:hover,
+.mobile-nav-links > a:active {
+    color: #5D18EB;
+    padding-left: 8px;
+    border-bottom-color: rgba(93, 24, 235, 0.4);
+}
+
+/* Staggered Slide-in Animation */
+.mobile-nav-overlay.active .mobile-nav-links > a:nth-child(1) { transition-delay: 0.05s; }
+.mobile-nav-overlay.active .mobile-nav-links > a:nth-child(2) { transition-delay: 0.10s; }
+.mobile-nav-overlay.active .mobile-nav-links > a:nth-child(3) { transition-delay: 0.15s; }
+.mobile-nav-overlay.active .mobile-nav-links > a:nth-child(4) { transition-delay: 0.20s; }
+.mobile-nav-overlay.active .mobile-nav-links > a:nth-child(5) { transition-delay: 0.25s; }
+
+.mobile-nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.35s ease 0.3s;
+}
+
+.mobile-nav-overlay.active .mobile-nav-actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-nav-actions .btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+.mobile-nav-actions .btn-nav-outline {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.mobile-nav-actions .btn-nav-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mobile-nav-actions .btn-nav-purple {
+    background: #5D18EB;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0 4px 20px rgba(93, 24, 235, 0.4);
+}
+
+.mobile-nav-actions .btn-nav-purple:hover {
+    background: #6E2AFA;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 400px) {
+    .mobile-nav-links > a {
+        font-size: 1.35rem;
+        padding: 15px 0;
+    }
+}
+
+/* Fix mobile toggle z-index so it is clickable above the overlay */
+.mobile-toggle {
+    z-index: 999;
+    position: relative;
+}
+/* Turn hamburger to X when active */
+.mobile-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.mobile-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.header-logo-img {
+    height: 45px;
+    width: auto;
+    max-height: none;
+    transform: scale(1.8);
+    transform-origin: left center;
+}
+
+@media (max-width: 768px) {
+    .header-logo-img {
+        transform: scale(1.4); /* Reduced scale on mobile */
+        transform-origin: left center;
+        margin-left: -5px; /* Adjust left padding */
+    }
+}
+
+/* --- Mobile Responsive Fixes for Mentorship Grid --- */
+@media (max-width: 768px) {
+    .mentorship-hover-box-wrapper {
+        height: 350px !important;
+        border-radius: 24px !important;
+        padding: 0 16px !important;
+        margin: 40px 0 !important;
+    }
+    .mentorship-grid-container {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 16px !important;
+        transform: rotate(-6deg) scale(1.2) !important;
+        margin-top: -10% !important;
+    }
+    .mentorship-grid-container > div:nth-child(n+4) {
+        display: none !important;
+    }
 }
