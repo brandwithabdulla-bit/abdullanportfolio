@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 import GlobalScripts from "@/components/GlobalScripts";
 
 export const metadata = {
@@ -173,6 +174,19 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
         />
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XRNZ80SDL7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XRNZ80SDL7');
+          `}
+        </Script>
       </head>
       <body>
         {children}

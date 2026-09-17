@@ -6,4 +6,4 @@
 :HL["/assets/css/global-scroll.css","style"]
 :HL["/assets/css/scroll-reel.css","style"]
 :HL["/assets/thumbnail/how-googlehelps-local-business.webp","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"blog","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"local-seo-wayanad","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"6JTS3-Hw66ngLRe7WWXqQ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"blog","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"local-seo-wayanad","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"96vdMv5mjmP_KGjG2FUCK"}

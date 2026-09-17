@@ -36,4 +36,4 @@
 :HL["/assets/logo/pastel-10.webp","image"]
 :HL["/assets/logo/career-3.webp","image"]
 :HL["/assets/logo/pastel-2.webp","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"portfolio","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"6JTS3-Hw66ngLRe7WWXqQ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"portfolio","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"96vdMv5mjmP_KGjG2FUCK"}
