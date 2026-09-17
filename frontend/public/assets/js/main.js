@@ -2,7 +2,6 @@
  * Main JavaScript
  * Handles global interactions and scroll effects
  */
-console.error("DEBUG FATAL: MAIN.JS HAS STARTED PARSING AND EXECUTING!");
 window.initMainScripts = () => {
     
     // 1. Header Scroll Effect

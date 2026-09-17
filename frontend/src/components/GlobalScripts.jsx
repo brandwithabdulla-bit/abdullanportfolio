@@ -8,6 +8,12 @@ export default function GlobalScripts() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // Force scroll to top on route change (important for Lenis/SPA)
+    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined' && window.globalLenis) {
+      window.globalLenis.scrollTo(0, { immediate: true });
+    }
+
     // Re-run animations on every route change
     if (typeof window.initMainScripts === 'function') {
       setTimeout(() => {
@@ -28,7 +34,7 @@ export default function GlobalScripts() {
     <>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" strategy="beforeInteractive" />
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" strategy="afterInteractive" />
-      <Script src="/assets/js/projects.js" strategy="beforeInteractive" />
+      <Script src="/assets/js/projects.js?v=3" strategy="beforeInteractive" />
       <Script src="/assets/js/drift-wall.js" strategy="beforeInteractive" />
       <Script src="/assets/js/main.js" strategy="afterInteractive" onLoad={() => { 
           if(typeof window.initMainScripts === 'function') window.initMainScripts();

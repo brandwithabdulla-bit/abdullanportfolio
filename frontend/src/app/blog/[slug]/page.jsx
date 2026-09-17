@@ -13,6 +13,55 @@ export function generateStaticParams() {
     }));
 }
 
+// Dynamic per-post SEO metadata
+export async function generateMetadata({ params }) {
+    const resolvedParams = await params;
+    const post = blogs.find((b) => b.slug === resolvedParams.slug);
+
+    if (!post) {
+        return {
+            title: 'Post Not Found',
+        };
+    }
+
+    // Strip HTML tags to get a plain text excerpt for description
+    const plainText = post.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const excerpt = plainText.slice(0, 155) + '…';
+
+    return {
+        title: `${post.title} | Performance Marketer in Kerala`,
+        description: excerpt,
+        keywords: [
+            'performance marketer in kerala',
+            'digital marketer in kerala',
+            post.title.toLowerCase(),
+        ],
+        alternates: {
+            canonical: `/blog/${post.slug}`,
+        },
+        openGraph: {
+            title: `${post.title} | Muhammed Abdulla`,
+            description: excerpt,
+            url: `/blog/${post.slug}`,
+            type: 'article',
+            authors: ['Muhammed Abdulla'],
+            images: [
+                {
+                    url: post.image,
+                    alt: post.title,
+                },
+            ],
+        },
+        twitter: {
+            title: `${post.title} | Muhammed Abdulla`,
+            description: excerpt,
+            images: [post.image],
+        },
+    };
+}
+
+
+
 export default async function BlogPost({ params }) {
     const resolvedParams = await params;
     const { slug } = resolvedParams;

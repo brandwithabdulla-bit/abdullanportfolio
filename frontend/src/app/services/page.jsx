@@ -1,5 +1,6 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '../../../public/assets/css/services-page.css';
@@ -36,24 +37,12 @@ export default function ServicesPage() {
             Data-driven marketing, websites and digital strategies designed to turn attention into measurable business growth.
           </p>
           <div className="sp-hero-ctas">
-            <a href="#contact" className="sp-btn-purple">Let's Work Together ↗</a>
-            <a href="#work" className="sp-btn-ghost">View My Work ↓</a>
+            <a href="#contact" className="sp-btn-purple">Let&apos;s Work Together ↗</a>
+            <Link href="/#work" className="sp-btn-ghost">View My Work ↓</Link>
           </div>
         </div>
 
-        <div className="sp-hero-visual fade-in-up delay-1">
-            {/* Visual placeholder matching the laptop vibe */}
-            <div style={{ position: 'relative', width: '100%', aspectRatio: '16/11', background: '#e0e0e0', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.1)' }}>
-                <img src="/assets/images/projects/project_7.png" alt="Dashboard" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                
-                {/* Floating Metric Card (Mockup detail) */}
-                <div style={{ position: 'absolute', top: '15%', left: '-20px', background: 'white', padding: '15px 25px', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
-                    <div style={{ fontSize: '0.7rem', color: '#666', marginBottom: '5px' }}>Leads Generated</div>
-                    <div style={{ fontSize: '1.5rem', fontWeight: '800' }}>1,480</div>
-                    <div style={{ display: 'inline-block', marginTop: '5px', background: '#E6F8ED', color: '#10B981', padding: '4px 8px', borderRadius: '4px', fontSize: '0.75rem', fontWeight: '700' }}>↑ 62%</div>
-                </div>
-            </div>
-        </div>
+
       </section>
 
       {/* 2. What I Offer (Service Grid) */}
@@ -161,7 +150,7 @@ export default function ServicesPage() {
                     <span className="sp-pill">Funnels</span>
                     <span className="sp-pill">Analytics</span>
                 </div>
-                <p className="sp-card-desc">Identify what's stopping your business from growing and build a clearer path from attention to conversion.</p>
+                <p className="sp-card-desc">Identify what&apos;s stopping your business from growing and build a clearer path from attention to conversion.</p>
                 <a href="#contact" className="sp-explore-link">Explore Service ↗</a>
             </div>
 
@@ -314,12 +303,12 @@ export default function ServicesPage() {
       <div style={{ backgroundColor: "#D6D1C6", width: "100%" }}>
       <section className="sp-cta-section fade-in-up">
         <div className="sp-cta-left">
-            <div className="sp-eyebrow">LET'S TALK</div>
+            <div className="sp-eyebrow">LET&apos;S TALK</div>
             <h2>Ready to make<br/>your marketing <span className="purple-text">perform?</span></h2>
         </div>
         <div className="sp-cta-right">
-            <p className="sp-cta-p">Tell me what you're building.<br/>Let's figure out how to grow it — together.</p>
-            <a href="#contact" className="sp-btn-purple">Let's Work Together ↗</a>
+            <p className="sp-cta-p">Tell me what you&apos;re building.<br/>Let&apos;s figure out how to grow it — together.</p>
+            <a href="#contact" className="sp-btn-purple">Let&apos;s Work Together ↗</a>
         </div>
       </section>
       </div>

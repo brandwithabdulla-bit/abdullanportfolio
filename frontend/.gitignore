@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# OS & temporary files
+._*
+**/._*
+*.bak
+*.log
+firebase-debug.log*
+apply_css.sh
+fix_css*.sh
+fix*.js
+part*.txt
+update_logos.js
+out.html

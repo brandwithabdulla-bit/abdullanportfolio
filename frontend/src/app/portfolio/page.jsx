@@ -1,7 +1,38 @@
 import React from 'react';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '../../../public/assets/css/portfolio-page.css';
+
+export const metadata = {
+  title: "Portfolio | Performance Marketing Results in Kerala",
+  description:
+    "Browse real campaign results and client work by Muhammed Abdulla — a leading digital marketer in Kerala. See how brands scale with data-driven performance marketing, SEO, and paid ads.",
+  keywords: [
+    "performance marketing portfolio kerala",
+    "digital marketing portfolio kerala",
+    "performance marketer in kerala",
+    "digital marketer in kerala",
+    "paid ads results kerala",
+  ],
+  alternates: {
+    canonical: "/portfolio",
+  },
+  openGraph: {
+    title: "Portfolio | Performance Marketing Results – Muhammed Abdulla, Kerala",
+    description:
+      "Browse real campaign results and client work by Muhammed Abdulla — Kerala's leading digital marketer.",
+    url: "/portfolio",
+    type: "website",
+  },
+  twitter: {
+    title: "Performance Marketing Portfolio – Kerala | Muhammed Abdulla",
+    description:
+      "Real results from a top digital marketer in Kerala. See paid ad campaigns, SEO wins, and brand growth case studies.",
+  },
+};
+
+
 
 export default function Page() {
   return (
@@ -16,11 +47,10 @@ export default function Page() {
         <div className="fade-in-up">
             <div className="pf-eyebrow">WEBSITES × SEO × DIGITAL GROWTH</div>
             <h1 className="pf-hero-title">Building Brands<br />That <span>Get Found</span></h1>
-            <p className="pf-hero-desc">Professional web development and SEO services in Wayanad, Kerala — helping local businesses grow online with real results.</p>
-            
-            <div style={{ display: "flex", gap: "20px" }}>
+            <p className="pf-hero-desc">Professional performance marketing, web development, and SEO services in Kerala — helping businesses grow online with real results.</p>
+            <div className="pf-hero-btns">
                 <a href="#contact" className="pf-btn-primary" style={{ color: "#fff" }}>Start Your Project →</a>
-                <a href="#about" className="pf-btn-outline">Learn More</a>
+                <a href="#about" className="pf-btn-outline">Learn More ↓</a>
             </div>
 
             <div className="pf-hero-stats fade-in-up delay-2">
@@ -37,7 +67,7 @@ export default function Page() {
                     <div className="pf-stat-label">Performance Improved</div>
                 </div>
                 <div>
-                    <div className="pf-stat-num">80+ LAKHS</div>
+                    <div className="pf-stat-num">80L+</div>
                     <div className="pf-stat-label">Profits Generated</div>
                 </div>
             </div>
@@ -45,8 +75,8 @@ export default function Page() {
 
         <div className="pf-hero-card fade-in-up delay-1">
             <div className="pf-hero-card-overlay"></div>
-            <div className="pf-cursive-accent">Ideas<br />Websites<br />SEO<br />Growth</div>
-            <div style={{ position: "absolute", bottom: "30px", right: "30px", background: "rgba(0,0,0,0.6)", backdropFilter: "blur(10px)", padding: "15px 25px", borderRadius: "12px", display: "flex", alignItems: "center", gap: "15px", border: "1px solid rgba(255,255,255,0.1)" }}>
+            <div className="pf-cursive-accent">Ideas<br />Websites<br />Content<br />Growth</div>
+            <div className="pf-hero-overlay-box">
                 <div className="pf-icon-circle">⭐</div>
                 <div style={{ fontSize: "0.9rem", maxWidth: "150px" }}>Turning local businesses into market leaders.</div>
             </div>
@@ -92,13 +122,13 @@ export default function Page() {
         <div className="pf-about-grid">
             <div className="fade-in-up">
                 <div className="pf-eyebrow">ABOUT ME</div>
-                <h2 className="pf-hero-title" style={{ fontSize: "3.5rem" }}>Hey Again 👋<br />Here's a Little About Me</h2>
-                <p className="pf-hero-desc">I'm <strong>Muhammed Abdulla</strong>, a Web Developer and SEO Expert in Wayanad, Kerala. I create modern websites and SEO strategies that help businesses get more visibility, attract real customers, and grow online.</p>
+                <h2 className="pf-hero-title" style={{ fontSize: "3.5rem" }}>Hey Again 👋<br />Here&apos;s a Little About Me</h2>
+                <p className="pf-hero-desc">I&apos;m <strong>Muhammed Abdulla</strong>, a Performance Marketer in Kerala & Web Developer. I create modern websites and growth strategies that help businesses get more visibility, attract real customers, and scale online.</p>
                 <p className="pf-hero-desc">Simply put, I build websites that look great, work efficiently, and rank higher on Google.</p>
-                <a href="/about" className="pf-btn-primary" style={{ marginTop: "20px" }}>More About Me →</a>
+                <Link href="/about" className="pf-btn-primary" style={{ marginTop: "20px" }}>More About Me →</Link>
             </div>
 
-            <div className="fade-in-up delay-1" style={{ display: "flex", gap: "40px", alignItems: "center" }}>
+            <div className="fade-in-up delay-1 pf-about-stats-container">
                 <div className="pf-card-list" style={{ background: "#fff", padding: "40px", borderRadius: "24px", boxShadow: "0 15px 40px rgba(0,0,0,0.04)", border: "1px solid rgba(0,0,0,0.03)" }}>
                     <div className="pf-list-item">
                         <div className="pf-icon-circle">💼</div>
@@ -108,17 +138,17 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="pf-list-item">
-                        <div className="pf-icon-circle">📍</div>
+                        <div className="pf-icon-circle">🎯</div>
                         <div>
-                            <div className="pf-stat-label">Based in</div>
-                            <div style={{ fontWeight: "600" }}>Wayanad, Kerala</div>
+                            <div className="pf-stat-label">Clients Served</div>
+                            <div style={{ fontWeight: "600" }}>50+ Brands</div>
                         </div>
                     </div>
                     <div className="pf-list-item">
-                        <div className="pf-icon-circle">🎯</div>
+                        <div className="pf-icon-circle">🚀</div>
                         <div>
-                            <div className="pf-stat-label">Focus</div>
-                            <div style={{ fontWeight: "600" }}>Results Driven</div>
+                            <div className="pf-stat-label">Ad Spend Managed</div>
+                            <div style={{ fontWeight: "600" }}>₹50L+</div>
                         </div>
                     </div>
                     <div className="pf-list-item">
@@ -131,7 +161,7 @@ export default function Page() {
                 </div>
                 
                 <div style={{ fontFamily: "'Brush Script MT', cursive", color: "#444", fontSize: "2.2rem", lineHeight: "1.3" }}>
-                    "Quality<br />Over Quantity.<br />Your Success<br />is My Priority."<br />
+                    &ldquo;Quality<br />Over Quantity.<br />Your Success<br />is My Priority.&rdquo;<br />
                     <span style={{ fontFamily: "Inter, sans-serif", fontSize: "0.7rem", letterSpacing: "2px", color: "#666", textTransform: "uppercase" }}>Muhammed Abdulla</span>
                 </div>
             </div>
@@ -185,12 +215,12 @@ export default function Page() {
     {/*  5. FEATURED WORK  */}
     <section className="pf-section pf-bg-light">
       <div className="pf-section-inner">
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+        <div className="pf-section-header">
             <div>
                 <div className="pf-eyebrow">FEATURED WORK</div>
                 <h2 className="pf-hero-title" style={{ fontSize: "3rem", margin: "0" }}>A Glimpse of<br />My Recent Projects</h2>
             </div>
-            <p className="pf-hero-desc" style={{ margin: "0", maxWidth: "400px", textAlign: "right" }}>Real businesses. Real results. Explore some of the websites and campaigns I've worked on.</p>
+            <p className="pf-hero-desc" style={{ margin: "0", maxWidth: "400px", textAlign: "right" }}>Real businesses. Real results. Explore some of the websites and campaigns I&apos;ve worked on.</p>
         </div>
         
         <div style={{ marginTop: "60px", width: "100%", overflow: "hidden", maskImage: "linear-gradient(to right, transparent, black 2%, black 98%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 2%, black 98%, transparent)" }}>
@@ -202,7 +232,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Amberwoods</h3>
                             <div className="pf-stat-label">Website + Marketing</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -210,7 +240,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Pencil Hub</h3>
                             <div className="pf-stat-label">Website Development</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -218,7 +248,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Silent Slopes</h3>
                             <div className="pf-stat-label">Website + SEO</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -226,7 +256,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Skillage</h3>
                             <div className="pf-stat-label">UI/UX Design</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -234,7 +264,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Mountain Vibes</h3>
                             <div className="pf-stat-label">Performance Marketing</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -242,7 +272,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Partho</h3>
                             <div className="pf-stat-label">Branding + Web</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                 </div>
@@ -253,7 +283,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Amberwoods</h3>
                             <div className="pf-stat-label">Website + Marketing</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -261,7 +291,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Pencil Hub</h3>
                             <div className="pf-stat-label">Website Development</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -269,7 +299,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Silent Slopes</h3>
                             <div className="pf-stat-label">Website + SEO</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -277,7 +307,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Skillage</h3>
                             <div className="pf-stat-label">UI/UX Design</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -285,7 +315,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Mountain Vibes</h3>
                             <div className="pf-stat-label">Performance Marketing</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -293,7 +323,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Partho</h3>
                             <div className="pf-stat-label">Branding + Web</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                 </div>
@@ -304,7 +334,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Amberwoods</h3>
                             <div className="pf-stat-label">Website + Marketing</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -312,7 +342,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Pencil Hub</h3>
                             <div className="pf-stat-label">Website Development</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -320,7 +350,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Silent Slopes</h3>
                             <div className="pf-stat-label">Website + SEO</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -328,7 +358,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Skillage</h3>
                             <div className="pf-stat-label">UI/UX Design</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -336,7 +366,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Mountain Vibes</h3>
                             <div className="pf-stat-label">Performance Marketing</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                     <div className="pf-work-card" style={{ width: "380px", flexShrink: 0 }}>
@@ -344,7 +374,7 @@ export default function Page() {
                         <div className="pf-work-overlay">
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "5px" }}>Partho</h3>
                             <div className="pf-stat-label">Branding + Web</div>
-                            <div className="pf-icon-circle" style={{ position: "absolute", bottom: "30px", right: "30px", border: "1px solid rgba(255,255,255,0.2)" }}>→</div>
+                            <div className="pf-icon-circle" aria-label="View project"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
                         </div>
                     </div>
                 </div>
@@ -499,36 +529,36 @@ export default function Page() {
              
              <div className="pf-brand-grid">
                  {/*  Row 1  */}
-                 <div className="pf-brand-card" style={{ background: "#DEFE00", color: "#000" }}><img src="/assets/logo/2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#223E50", color: "#fff" }}><img src="/assets/logo/2_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#fff", color: "#000", border: "1px solid #ddd" }}><img src="/assets/logo/adzone.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#B38031", color: "#fff" }}><img src="/assets/logo/adzone_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#1B7171", color: "#fff" }}><img src="/assets/logo/career-1.png" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#E1E0CD", color: "#000" }}><img src="/assets/logo/career-2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#DEFE00", color: "#000" }}><img src="/assets/logo/ever_consutruction-1.webp" alt="Ever Constructions" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#223E50", color: "#fff" }}><img src="/assets/logo/partho-5.webp" alt="Partho Holidays" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/mountain-vibes.webp" alt="Mountain Vibes" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#B38031", color: "#fff" }}><img src="/assets/logo/allison.webp" alt="Allison Resort" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#1B7171", color: "#fff" }}><img src="/assets/logo/partho-6.webp" alt="Breezeland Holidays" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#E1E0CD", color: "#000" }}><img src="/assets/logo/silent.webp" alt="Silent Slopes" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
 
                  {/*  Row 2  */}
-                 <div className="pf-brand-card" style={{ background: "#0F52FF", color: "#fff" }}><img src="/assets/logo/career-3.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#fff", color: "#000", border: "1px solid #ddd" }}><img src="/assets/logo/career-4.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#85C02B", color: "#000" }}><img src="/assets/logo/career-5.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#12529E", color: "#fff" }}><img src="/assets/logo/career_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#07333C", color: "#fff" }}><img src="/assets/logo/ever_consutruction-1_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#1C0A09", color: "#fff" }}><img src="/assets/logo/hexad-2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#0F52FF", color: "#fff" }}><img src="/assets/logo/pastel-1.webp" alt="Windage Production" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/pastel-3.webp" alt="Amber Woods" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#85C02B", color: "#fff" }}><img src="/assets/logo/pastel-8.webp" alt="Passion Palace" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#12529E", color: "#fff" }}><img src="/assets/logo/adzone.webp" alt="Adzone Productions" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#07333C", color: "#fff" }}><img src="/assets/logo/peralserence.webp" alt="The Pearl Serene" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#1C0A09", color: "#fff" }}><img src="/assets/logo/hexad-2.webp" alt="Gritcore" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
 
                  {/*  Row 3  */}
-                 <div className="pf-brand-card" style={{ background: "#0F3A1D", color: "#fff" }}><img src="/assets/logo/hexad.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#BCBCBC", color: "#000" }}><img src="/assets/logo/mountain-vibes.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#0F284B", color: "#fff" }}><img src="/assets/logo/partho-5.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#4A110D", color: "#FACC80", fontFamily: "'Cormorant Garamond', serif", fontSize: "1.8rem", fontStyle: "italic" }}><img src="/assets/logo/partho-6.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#0D1F38", color: "#fff" }}><img src="/assets/logo/pastel-1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#fff", color: "#000", border: "1px solid #ddd" }}><img src="/assets/logo/pastel-10.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#0F3A1D", color: "#fff" }}><img src="/assets/logo/2.webp" alt="HK Travels" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#BCBCBC", color: "#000" }}><img src="/assets/logo/hexad.webp" alt="Hexad Power House" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#0F284B", color: "#fff" }}><img src="/assets/logo/career.webp" alt="Career Caravan" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#4A110D", color: "#fff" }}><img src="/assets/logo/pastel.webp" alt="Pastel Frames" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#0D1F38", color: "#fff" }}><img src="/assets/logo/career-1.png" alt="Skillage Academy" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/career-5.webp" alt="Royal Spice" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
 
                  {/*  Row 4  */}
-                 <div className="pf-brand-card" style={{ background: "#FAD2CC", color: "#6E38FF", fontFamily: "'Brush Script MT', cursive", fontSize: "2rem" }}><img src="/assets/logo/pastel-2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#116FBC", color: "#fff", fontSize: "2rem", fontFamily: "'Times New Roman', serif" }}><img src="/assets/logo/pastel-3.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#13120E", color: "#78923F" }}><img src="/assets/logo/pastel-8_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#1C100C", color: "#3ABB69", fontSize: "1rem" }}><img src="/assets/logo/pastel-9.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#fff", color: "#000", border: "1px solid #ddd" }}><img src="/assets/logo/pastel.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                 <div className="pf-brand-card" style={{ background: "#10392C", color: "#fff", fontFamily: "'Cormorant Garamond', serif", fontWeight: "400" }}><img src="/assets/logo/peralserence.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#FAD2CC", color: "#000" }}><img src="/assets/logo/career-2.webp" alt="Happily Stories" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#116FBC", color: "#fff" }}><img src="/assets/logo/career-4.webp" alt="Hirz India" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#13120E", color: "#fff" }}><img src="/assets/logo/pastel-9.webp" alt="Yathra Planners" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#1C100C", color: "#fff" }}><img src="/assets/logo/pastel-10.webp" alt="Commune 18" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/career-3.webp" alt="Pencil Hub" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                 <div className="pf-brand-card" style={{ background: "#10392C", color: "#fff" }}><img src="/assets/logo/pastel-2.webp" alt="Wedding Talks" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
              </div>
         </div>
       </div>

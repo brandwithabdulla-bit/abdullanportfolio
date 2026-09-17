@@ -4,6 +4,35 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 import '../../../public/assets/css/blog-page.css';
 
+export const metadata = {
+  title: "Blog | Digital Marketing & Performance Marketing Insights – Kerala",
+  description:
+    "Read expert articles on performance marketing, digital marketing, SEO, and brand growth strategies by Muhammed Abdulla — Kerala's top performance marketer and digital marketing consultant.",
+  keywords: [
+    "performance marketer in kerala blog",
+    "digital marketing blog kerala",
+    "seo tips kerala",
+    "digital marketer in kerala",
+    "performance marketing insights",
+  ],
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Blog | Performance Marketing & Digital Marketing Insights – Kerala",
+    description:
+      "Expert articles on performance marketing, digital marketing, and SEO by Muhammed Abdulla — Kerala's top digital marketer.",
+    url: "/blog",
+    type: "website",
+  },
+  twitter: {
+    title: "Digital Marketing Blog – Kerala | Muhammed Abdulla",
+    description:
+      "Performance marketing insights, SEO tips, and brand growth strategies from a top digital marketer in Kerala.",
+  },
+};
+
+
 export default function Page() {
   return (
     <>
@@ -13,7 +42,7 @@ export default function Page() {
 
     
     <div className="blog-page-wrap">
-        <h1 className="blog-page-title">Blogs</h1>
+        <h1 className="blog-page-title">Digital Marketing &amp; Performance Marketing Blog</h1>
         
         <div className="blog-page-grid">
             {/*  Card 1  */}

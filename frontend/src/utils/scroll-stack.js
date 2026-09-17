@@ -11,7 +11,6 @@ export function initScrollStack() {
     const stackPositionPercentage = 0.20;
     const scaleEndPositionPercentage = 0.10;
     const baseScale = 0.85;
-    const rotationAmount = 0;
 
     let lastTransforms = new Map();
 

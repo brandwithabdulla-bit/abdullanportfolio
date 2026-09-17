@@ -116,24 +116,25 @@ body {
 ========================================= */
 .sp-hero {
   padding-top: 180px; 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
   .sp-hero {
-    grid-template-columns: 1fr;
-    text-align: center;
     padding-top: 140px;
   }
-  .sp-eyebrow {
-    justify-content: center;
-  }
-  .sp-eyebrow::before {
-    display: none;
-  }
+}
+
+.sp-eyebrow {
+  justify-content: center;
+}
+
+.sp-eyebrow::before {
+  display: none;
 }
 
 .sp-hero-desc {
@@ -154,12 +155,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-}
-
-@media (max-width: 1024px) {
-  .sp-hero-ctas {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .sp-hero-visual {
@@ -528,10 +524,6 @@ body {
   gap: 60px;
 }
 
-@media (max-width: 1024px) {
-  .sp-faq-section { flex-direction: column; }
-}
-
 .sp-faq-left {
   flex: 0 0 350px;
 }
@@ -544,8 +536,27 @@ body {
   align-content: flex-start;
 }
 
+@media (max-width: 1024px) {
+  .sp-faq-section { 
+    flex-direction: column; 
+    gap: 30px;
+  }
+  .sp-faq-left {
+    flex: none;
+    width: 100%;
+  }
+  .sp-faq-left .sp-headline {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 768px) {
-  .sp-faq-right { grid-template-columns: 1fr; }
+  .sp-faq-section {
+    gap: 20px;
+  }
+  .sp-faq-right { 
+    grid-template-columns: 1fr; 
+  }
 }
 
 .sp-faq-item {

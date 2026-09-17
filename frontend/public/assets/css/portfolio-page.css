@@ -6,7 +6,7 @@
   --pf-bg-dark-creme: #EAE5D9;
   --pf-text: #FFFFFF;
   --pf-text-secondary: #AAAAAA;
-  --pf-accent: #22D3EE;
+  --pf-accent: #5D18EB;
   --pf-border: rgba(255, 255, 255, 0.1);
   --pf-card-bg: rgba(255, 255, 255, 0.03);
 }
@@ -103,7 +103,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--pf-accent);
-    color: #000 !important;
+    color: #fff !important;
     padding: 15px 30px;
     border-radius: 999px;
     font-weight: 600;
@@ -113,7 +113,7 @@
 
 .pf-btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(34, 211, 238, 0.2);
+    box-shadow: 0 10px 20px rgba(93, 24, 235, 0.25);
 }
 
 .pf-btn-outline {
@@ -175,7 +175,7 @@
     overflow: hidden;
     height: 100%;
     min-height: 500px;
-    background: url('../mentors/Untitled-design-20.webp') no-repeat center center / cover;
+    background: url('../images/profile.jpeg') no-repeat center center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,6 +197,22 @@
     text-align: center;
     line-height: 1;
     text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.pf-hero-overlay-box {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 2;
 }
 
 .pf-icon-circle {
@@ -235,6 +251,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
+}
+
+/* Section Header */
+.pf-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .pf-card-list {
@@ -333,6 +356,41 @@
     color: #fff;
 }
 
+.pf-work-overlay .pf-icon-circle {
+    position: absolute !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    background: #FFFFFF !important;
+    color: #0B0B10 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 5 !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.pf-work-overlay .pf-icon-circle svg {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.pf-work-card:hover .pf-work-overlay .pf-icon-circle {
+    background: #5D18EB !important;
+    color: #FFFFFF !important;
+    transform: scale(1.12);
+    box-shadow: 0 8px 24px rgba(93, 24, 235, 0.5) !important;
+}
+
+.pf-work-card:hover .pf-work-overlay .pf-icon-circle svg {
+    transform: translate(2px, -2px);
+}
+
 @media(max-width: 1024px) {
     .pf-section { grid-template-columns: 1fr !important; }
     .pf-about-grid { grid-template-columns: 1fr; }
@@ -345,4 +403,158 @@
     .pf-services-grid { grid-template-columns: 1fr; }
     .pf-work-grid { grid-template-columns: 1fr; }
     .pf-hero-stats { flex-direction: column; gap: 20px; }
+}
+/* --- Mobile Responsive Overrides for Inline Styles --- */
+@media (max-width: 768px) {
+    /* Fix Hero Grid */
+    .pf-section-inner {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        gap: 40px !important;
+        padding-top: 120px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    /* Fix Huge Inline Fonts */
+    h2.pf-hero-title, .pf-hero-title[style] {
+        font-size: 2.4rem !important;
+        line-height: 1.2 !important;
+        word-wrap: break-word !important;
+    }
+    
+    h1.pf-hero-title, h1.pf-hero-title[style] {
+        font-size: 2.8rem !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Fix Fixed Width Cards */
+    .pf-hero-card, .pf-brand-card, .pf-hero-card[style], .pf-brand-card[style] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .pf-work-card[style] {
+        width: 280px !important;
+        max-width: 280px !important;
+        flex-shrink: 0 !important;
+        aspect-ratio: 4/5 !important;
+    }
+    
+    /* Ensure no horizontal overflow anywhere */
+    .pf-section {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+    }
+    
+    /* Hero Buttons Alignment */
+    .pf-hero-btns {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 15px !important;
+        flex-wrap: wrap !important;
+    }
+    
+    /* Fix Stats wrapping */
+    .pf-hero-stats {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 30px 10px !important;
+        align-items: flex-start !important;
+    }
+    .pf-hero-stats > div {
+        width: 45% !important;
+        text-align: left !important;
+    }
+    
+    /* Fix About Grid & Padding */
+    .pf-about-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+    .pf-about-stats-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+    .pf-card-list {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        padding: 30px 20px !important; /* Fix padding inside card */
+    }
+    
+    /* Fix Skinny Hero Card - full width with spacious padding */
+    .pf-hero-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        align-self: stretch !important;
+        min-height: 480px !important;
+        border-radius: 20px !important;
+        aspect-ratio: auto !important;
+        height: auto !important;
+        padding: 50px 30px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative !important;
+    }
+    
+    .pf-cursive-accent {
+        font-size: 3rem !important;
+        line-height: 1.15 !important;
+        margin-bottom: 70px !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+    
+    .pf-hero-overlay-box {
+        position: absolute !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        left: 20px !important; /* Stretch across the card width */
+        max-width: calc(100% - 40px) !important;
+        padding: 14px 18px !important;
+        justify-content: center !important;
+        border-radius: 14px !important;
+        box-sizing: border-box !important;
+    }
+    .pf-hero-overlay-box > div:last-child {
+        max-width: none !important;
+    }
+    
+    /* Fix Trust Marquee */
+    .pf-marquee-track[style] {
+        margin-left: 0 !important;
+        animation: scroll-left 15s linear infinite !important;
+    }
+    
+    /* Ensure body cannot scroll horizontally */
+    body, html {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+    }
+    
+    /* Fix Featured Work Header */
+    .pf-section-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 20px !important;
+    }
+    .pf-section-header .pf-hero-title {
+        font-size: 2.2rem !important;
+    }
+    .pf-section-header .pf-hero-desc {
+        text-align: left !important;
+        margin-top: 10px !important;
+    }
 }

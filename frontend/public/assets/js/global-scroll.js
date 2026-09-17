@@ -40,3 +40,17 @@ window.initGlobalScroll = () => {
         window._globalScrollObserver.observe(el);
     });
 };
+document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (link && link.hash && link.origin === window.location.origin && link.pathname === window.location.pathname) {
+        const target = document.querySelector(link.hash);
+        if (target) {
+            e.preventDefault();
+            if (window.globalLenis) {
+                window.globalLenis.scrollTo(target);
+            } else {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }
+});

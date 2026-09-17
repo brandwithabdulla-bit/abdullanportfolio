@@ -272,30 +272,71 @@
 
 .ap-mission-ctas {
     display: flex;
+    align-items: center;
     gap: 16px;
-    margin-top: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+}
+.ap-btn-dark, .ap-btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 48px;
+    padding: 0 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.25s ease;
 }
 .ap-btn-dark {
     background: #000;
     color: #FFF;
-    padding: 14px 28px;
-    border-radius: 999px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: transform 0.2s;
+    border: 1px solid #000;
 }
 .ap-btn-light {
     background: #FFF;
     color: #000;
-    border: 1px solid rgba(0,0,0,0.1);
-    padding: 14px 28px;
-    border-radius: 999px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: transform 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
-.ap-btn-dark:hover, .ap-btn-light:hover {
+.ap-btn-dark:hover {
+    background: #5D18EB;
+    border-color: #5D18EB;
+    color: #FFF;
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(93, 24, 235, 0.35);
+}
+.ap-btn-light:hover {
+    background: #F8FAFC;
+    border-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .ap-mission {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ap-mission {
+        padding: 50px 18px;
+    }
+    .ap-mission-ctas {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+    .ap-btn-dark, .ap-btn-light {
+        height: 44px;
+        padding: 0 18px;
+        font-size: 0.86rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
 }
 
 /* Mission Tall Cards */

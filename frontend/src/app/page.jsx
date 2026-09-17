@@ -55,10 +55,6 @@ export default function Page() {
         }
     }).catch(e => console.error(e));
 
-    import('@/utils/glass.js').then((m) => {
-        if(m.initGlassSurface) m.initGlassSurface('.header-inner');
-    }).catch(e => console.error(e));
-
     // 4. ScrollStack
     import('@/utils/scroll-stack.js').then((m) => {
         if (m.initScrollStack) {
@@ -117,8 +113,8 @@ export default function Page() {
                         <span style={{ color: "#22C55E" }}>in Kerala</span><br />
                         <span style={{ color: "#6633EE", fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontWeight: 400 }}>&amp; Web Developer</span>
                     </h1>
-                    <p className="hero-sub fade-in-up delay-2">
-                        I'm a Performance Marketer in Kerala & Web Developer helping brands, resorts & creators achieve digital growth through AI-driven marketing, branding, and web development while mentoring aspiring professionals to build valuable, high-income digital skills.
+                    <p className="hero-sub fade-in-up delay-2" style={{ marginBottom: "40px" }}>
+                        I&apos;m a Performance Marketer in Kerala & Web Developer helping brands, resorts & creators achieve digital growth through AI-driven marketing, branding, and web development while mentoring aspiring professionals to build valuable, high-income digital skills.
                     </p>
 
                     <div className="hero-cta-group fade-in delay-3">
@@ -128,7 +124,7 @@ export default function Page() {
                                     strokeLinejoin="round">
                                     <path d="M7 17L17 7M17 7H7M17 7V17" />
                                 </svg></span></a>
-                        <a href="#contact" className="btn btn-outline-dark magnetic-btn">Let's Talk <span
+                        <a href="#contact" className="btn btn-outline-dark magnetic-btn">Let&apos;s Talk <span
                                 className="circle-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                     strokeLinejoin="round">
@@ -267,7 +263,7 @@ export default function Page() {
 
             {/*  View More Button  */}
             <div className="cs-view-more-container">
-                <button id="cs-view-more-btn" className="cs-view-more-btn">View More Projects â†—</button>
+                <button id="cs-view-more-btn" className="cs-view-more-btn">View More Projects ↗</button>
             </div>
         </div>
     </section>
@@ -312,7 +308,7 @@ export default function Page() {
                             </div>
                             <div className="expand-text stack-text">
                                 <h3>SMM</h3>
-                                <p>Your customers are scrolling through social media every day â€“ let's make sure they see your business. From eye-catching posts to engaging stories, I keep your brand highly active and relevant.</p>
+                                <p>Your customers are scrolling through social media every day — let&apos;s make sure they see your business. From eye-catching posts to engaging stories, I keep your brand highly active and relevant.</p>
                             </div>
                         </div>
                     </div>
@@ -355,7 +351,7 @@ export default function Page() {
                             </div>
                             <div className="expand-text stack-text">
                                 <h3>Content Production</h3>
-                                <p>From high-quality videos to stunning visual graphics, we produce engaging content that captures your brand's essence and connects with your target audience to drive meaningful engagement.</p>
+                                <p>From high-quality videos to stunning visual graphics, we produce engaging content that captures your brand&apos;s essence and connects with your target audience to drive meaningful engagement.</p>
                             </div>
                         </div>
                     </div>
@@ -487,7 +483,7 @@ export default function Page() {
                 </div>
 
                 <a href="#about-page" className="btn-dark-pill">
-                    More About Me â†—
+                    More About Me ↗
                 </a>
             </div>
 
@@ -579,12 +575,12 @@ export default function Page() {
                 <div className="services-dark-card">
                     <h4 className="services-title">What I Do Best ✦</h4>
                     <div className="services-pill-grid">
-                        <div className="service-pill">Performance Marketing <span className="arrow">â†—</span></div>
-                        <div className="service-pill">SEO <span className="arrow">â†—</span></div>
-                        <div className="service-pill">Web Development <span className="arrow">â†—</span></div>
-                        <div className="service-pill">Branding <span className="arrow">â†—</span></div>
-                        <div className="service-pill">Content Strategy <span className="arrow">â†—</span></div>
-                        <div className="service-pill">Production <span className="arrow">â†—</span></div>
+                        <div className="service-pill">Performance Marketing <span className="arrow">↗</span></div>
+                        <div className="service-pill">SEO <span className="arrow">↗</span></div>
+                        <div className="service-pill">Web Development <span className="arrow">↗</span></div>
+                        <div className="service-pill">Branding <span className="arrow">↗</span></div>
+                        <div className="service-pill">Content Strategy <span className="arrow">↗</span></div>
+                        <div className="service-pill">Production <span className="arrow">↗</span></div>
                     </div>
                 </div>
             </div>
@@ -685,30 +681,37 @@ export default function Page() {
                     style={{ color: "var(--pf-accent)" }}>BRANDS</span></h2>
 
             <div className="custom-six-col-grid">
-                <div className="custom-grid-card" style={{ background: "#DEFE00", color: "#000" }}><img src="/assets/logo/2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#223E50", color: "#fff" }}><img src="/assets/logo/2_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#fff", color: "#000" }}><img src="/assets/logo/adzone.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#B38031", color: "#fff" }}><img src="/assets/logo/adzone_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#1B7171", color: "#fff" }}><img src="/assets/logo/career-1.png" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#E1E0CD", color: "#000" }}><img src="/assets/logo/career-2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#0F52FF", color: "#fff" }}><img src="/assets/logo/career-3.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#85C02B", color: "#fff" }}><img src="/assets/logo/career-4.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#12529E", color: "#fff" }}><img src="/assets/logo/career-5.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#07333C", color: "#fff" }}><img src="/assets/logo/career_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#1C0A09", color: "#fff" }}><img src="/assets/logo/ever_consutruction-1_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#0F3A1D", color: "#fff" }}><img src="/assets/logo/hexad-2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#BCBCBC", color: "#000" }}><img src="/assets/logo/hexad.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#0F284B", color: "#fff" }}><img src="/assets/logo/mountain-vibes.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#4A110D", color: "#fff" }}><img src="/assets/logo/partho-5.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#0D1F38", color: "#fff" }}><img src="/assets/logo/partho-6.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#FAD2CC", color: "#000" }}><img src="/assets/logo/pastel-1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#116FBC", color: "#fff" }}><img src="/assets/logo/pastel-10.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#13120E", color: "#fff" }}><img src="/assets/logo/pastel-2.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#1C100C", color: "#fff" }}><img src="/assets/logo/pastel-3.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#fff", color: "#000" }}><img src="/assets/logo/pastel-8_1.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#10392C", color: "#fff" }}><img src="/assets/logo/pastel-9.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#DEFE00", color: "#000" }}><img src="/assets/logo/pastel.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
-                <div className="custom-grid-card" style={{ background: "#223E50", color: "#fff" }}><img src="/assets/logo/peralserence.webp" alt="brand" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                {/*  Row 1  */}
+                <div className="custom-grid-card" style={{ background: "#DEFE00", color: "#000" }}><img src="/assets/logo/ever_consutruction-1.webp" alt="Ever Constructions" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#223E50", color: "#fff" }}><img src="/assets/logo/partho-5.webp" alt="Partho Holidays" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/mountain-vibes.webp" alt="Mountain Vibes" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#B38031", color: "#fff" }}><img src="/assets/logo/allison.webp" alt="Allison Resort" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#1B7171", color: "#fff" }}><img src="/assets/logo/partho-6.webp" alt="Breezeland Holidays" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#E1E0CD", color: "#000" }}><img src="/assets/logo/silent.webp" alt="Silent Slopes" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+
+                {/*  Row 2  */}
+                <div className="custom-grid-card" style={{ background: "#0F52FF", color: "#fff" }}><img src="/assets/logo/pastel-1.webp" alt="Windage Production" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/pastel-3.webp" alt="Amber Woods" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#85C02B", color: "#fff" }}><img src="/assets/logo/pastel-8.webp" alt="Passion Palace" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#12529E", color: "#fff" }}><img src="/assets/logo/adzone.webp" alt="Adzone Productions" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#07333C", color: "#fff" }}><img src="/assets/logo/peralserence.webp" alt="The Pearl Serene" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#1C0A09", color: "#fff" }}><img src="/assets/logo/hexad-2.webp" alt="Gritcore" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+
+                {/*  Row 3  */}
+                <div className="custom-grid-card" style={{ background: "#0F3A1D", color: "#fff" }}><img src="/assets/logo/2.webp" alt="HK Travels" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#BCBCBC", color: "#000" }}><img src="/assets/logo/hexad.webp" alt="Hexad Power House" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#0F284B", color: "#fff" }}><img src="/assets/logo/career.webp" alt="Career Caravan" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#4A110D", color: "#fff" }}><img src="/assets/logo/pastel.webp" alt="Pastel Frames" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#0D1F38", color: "#fff" }}><img src="/assets/logo/career-1.png" alt="Skillage Academy" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/career-5.webp" alt="Royal Spice" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+
+                {/*  Row 4  */}
+                <div className="custom-grid-card" style={{ background: "#FAD2CC", color: "#000" }}><img src="/assets/logo/career-2.webp" alt="Happily Stories" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#116FBC", color: "#fff" }}><img src="/assets/logo/career-4.webp" alt="Hirz India" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#13120E", color: "#fff" }}><img src="/assets/logo/pastel-9.webp" alt="Yathra Planners" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#1C100C", color: "#fff" }}><img src="/assets/logo/pastel-10.webp" alt="Commune 18" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#FFFFFF", color: "#000" }}><img src="/assets/logo/career-3.webp" alt="Pencil Hub" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
+                <div className="custom-grid-card" style={{ background: "#10392C", color: "#fff" }}><img src="/assets/logo/pastel-2.webp" alt="Wedding Talks" style={{ maxWidth: "100%", maxHeight: "100%", width: "100%", height: "100%", objectFit: "cover" }} /></div>
             </div>
         </div>
     </section>
@@ -726,7 +729,7 @@ export default function Page() {
                     MENTORSHIP & IMPACT
                 </div>
                 <h2 className="about-premium-headline"
-                    style={{ textAlign: "left", margin: "20px 0", color: "#000", lineHeight: "1.1" }}>I've mentored
+                    style={{ textAlign: "left", margin: "20px 0", color: "#000", lineHeight: "1.1" }}>I&apos;ve mentored
                     <span className="inline-icon-wrapper"
                         style={{ background: "#4ADE80", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "50px", height: "50px", borderRadius: "50%", verticalAlign: "middle", margin: "0 6px", boxShadow: "0 8px 20px rgba(74,222,128,0.3)" }}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5"
@@ -745,7 +748,7 @@ export default function Page() {
                 </h2>
                 <p className="bio-intro"
                     style={{ textAlign: "left", marginLeft: "0", maxWidth: "800px", padding: "0", color: "#666", fontWeight: "400", fontSize: "1.1rem", lineHeight: "1.6" }}>
-                    Over the years, I've mentored 500+ students in content creation, production, digital marketing, and
+                    Over the years, I&apos;ve mentored 500+ students in content creation, production, digital marketing, and
                     skill development. Every student has a different journey, and I focus on helping them build
                     practical skills, gain confidence, and turn learning into real opportunities.</p>
             </div>
@@ -821,7 +824,7 @@ export default function Page() {
         <div className="blog-container">
             <div className="cs-header fade-in-up">
                 <div className="cs-eyebrow">
-                    <span className="cs-indicator" style={{ background: "var(--color-accent-cyan)" }}></span> INSIGHTS
+                    <span className="cs-indicator" style={{ background: "var(--color-accent-purple)" }}></span> INSIGHTS
                 </div>
                 <h2 className="cs-heading"
                     style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap" }}>Latest <span
@@ -842,7 +845,7 @@ export default function Page() {
                     <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                         <div className="blog-date">09/07/2026</div>
                         <h3 style={{ marginBottom: 'auto' }}>How to Start Freelancing in 2026 - Everything You Need to Know</h3>
-                        <span className="read-more text-green" style={{ marginTop: '16px' }}>Read More <span className="arrow">&nearr;</span></span>
+                        <span className="read-more text-green" style={{ marginTop: '16px' }}>Read More <span className="arrow">↗</span></span>
                     </div>
                 </a>
                 <a href="https://brandwithabdulla.com/how-to-become-a-content-creator-in-2026/" target="_blank"
@@ -853,7 +856,7 @@ export default function Page() {
                     <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                         <div className="blog-date">16/05/2026</div>
                         <h3 style={{ marginBottom: 'auto' }}>How to Become a Content Creator in 2026</h3>
-                        <span className="read-more text-purple" style={{ marginTop: '16px' }}>Read More <span className="arrow">&nearr;</span></span>
+                        <span className="read-more text-purple" style={{ marginTop: '16px' }}>Read More <span className="arrow">↗</span></span>
                     </div>
                 </a>
                 <a href="https://brandwithabdulla.com/best-digital-marketing-expert-in-wayanad/" target="_blank"
@@ -864,7 +867,7 @@ export default function Page() {
                     <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                         <div className="blog-date">06/08/2025</div>
                         <h3 style={{ marginBottom: 'auto' }}>Best Digital Marketing Expert in Wayanad</h3>
-                        <span className="read-more text-yellow" style={{ marginTop: '16px' }}>Read More <span className="arrow">&nearr;</span></span>
+                        <span className="read-more text-yellow" style={{ marginTop: '16px' }}>Read More <span className="arrow">↗</span></span>
                     </div>
                 </a>
             </div>
@@ -889,7 +892,7 @@ export default function Page() {
                             </path>
                         </svg></span><span className="cs-highlight">Questions</span></h2>
             </div>
-            <div className="accordion-list fade-in-up delay-1" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '24px', alignItems: 'start' }}>
+            <div className="accordion-list fade-in-up delay-1" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: '24px', alignItems: 'start' }}>
                 <div className="accordion-item">
                     <button className="accordion-header">01. What does a performance marketer do? <span className="acc-icon">+</span></button>
                     <div className="accordion-body">

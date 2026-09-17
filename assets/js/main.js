@@ -2,7 +2,6 @@
  * Main JavaScript
  * Handles global interactions and scroll effects
  */
-console.error("DEBUG FATAL: MAIN.JS HAS STARTED PARSING AND EXECUTING!");
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Header Scroll Effect
     const header = document.querySelector('.header');

@@ -17,7 +17,12 @@ export default function MentoringPage() {
   });
 
   const [currentMonth, setCurrentMonth] = useState(new Date());
-  const [timeSlots, setTimeSlots] = useState([]);
+  const [timeSlots] = useState([
+    "10:00 AM",
+    "1:30 PM",
+    "3:00 PM",
+    "5:00 PM"
+  ]);
 
   const handlePrevMonth = () => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
   const handleNextMonth = () => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1));
@@ -26,17 +31,6 @@ export default function MentoringPage() {
   const dayNames = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
   const daysInMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0).getDate();
   const firstDayOfMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1).getDay();
-
-  useEffect(() => {
-
-      const times = [
-          "10:00 AM",
-          "1:30 PM",
-          "3:00 PM",
-          "5:00 PM"
-      ];
-      setTimeSlots(times);
-  }, []);
 
   const handleNextStep = () => setStep(2);
   const handleBack = () => setStep(1);
@@ -84,8 +78,8 @@ export default function MentoringPage() {
                 </div>
 
                 <div className="price-tag">
-                    <span className="price">₹4,999</span>
-                    <span className="duration">/ 45 mins</span>
+                    <span className="duration" style={{ marginRight: '8px' }}>Starting @</span>
+                    <span className="price">₹1,999</span>
                 </div>
             </div>
         </section>

@@ -1,0 +1,221 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/0xf2p-q7l_gol.js"],"default"]
+3:I[37457,["/_next/static/chunks/0xf2p-q7l_gol.js"],"default"]
+4:I[96652,["/_next/static/chunks/0xf2p-q7l_gol.js"],"default"]
+5:I[22016,["/_next/static/chunks/0xf2p-q7l_gol.js","/_next/static/chunks/22i43cg4l4-dq.js"],""]
+17:I[68027,["/_next/static/chunks/0xf2p-q7l_gol.js"],"default",1]
+:HL["/_next/static/chunks/0fknp9y7cq1ph.css","style"]
+:HL["/_next/static/chunks/0r83za5dl7nov.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap","style"]
+:HL["/assets/css/style.css?v=50","style"]
+:HL["/assets/css/drift-wall.css?v=46","style"]
+:HL["/assets/css/global-scroll.css","style"]
+:HL["/assets/css/scroll-reel.css","style"]
+:HL["/assets/images/abdhu-full-type-1024x576_1.webp","image"]
+15:X
+0:{"P":null,"c":["","portfolio"],"q":"","i":false,"f":[[["",{"children":["portfolio",{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0fknp9y7cq1ph.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0xf2p-q7l_gol.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap","rel":"stylesheet"}],["$","link",null,{"rel":"stylesheet","href":"/assets/css/style.css?v=50"}],["$","link",null,{"rel":"stylesheet","href":"/assets/css/drift-wall.css?v=46"}],["$","link",null,{"rel":"stylesheet","href":"/assets/css/global-scroll.css"}],["$","link",null,{"rel":"stylesheet","href":"/assets/css/scroll-reel.css"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}]]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[[["$","header",null,{"className":"floating-header fade-in-down","children":["$","div",null,{"className":"header-inner","children":[["$","div",null,{"className":"logo","children":["$","$L5",null,{"href":"/","children":["$","img",null,{"src":"/assets/images/abdhu-full-type-1024x576_1.webp","alt":"Brand With Abdulla Logo"}]}]}],["$","nav",null,{"className":"main-nav","children":[["$","$L5",null,{"href":"/#home","children":["Home ",["$","span",null,{"className":"nav-dot"}]]}],["$","$L5",null,{"href":"/about","children":"About"}],["$","$L5",null,{"href":"/#services","children":"Services"}],["$","$L5",null,{"href":"/portfolio","children":"Portfolio"}],["$","$L5",null,{"href":"/blog","children":"Blog"}],["$","$L5",null,{"href":"/#contact","children":"Contact"}]]}],["$","div",null,{"className":"header-actions","children":[["$","$L5",null,{"href":"/#contact","className":"btn btn-nav-outline","children":["Let's Talk",["$","svg",null,{"width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":["$","path",null,{"d":"M7 17L17 7M17 7H7M17 7V17"}]}]]}],["$","$L5",null,{"href":"/#mentoring","className":"btn btn-nav-purple","children":["Join 1:1 Mentoring",["$","svg",null,{"width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":["$","path",null,{"d":"M7 17L17 7M17 7H7M17 7V17"}]}]]}]]}],["$","button",null,{"className":"mobile-toggle","children":[["$","span",null,{}],["$","span",null,{}],["$","span",null,{}]]}]]}]}],["$","section",null,{"className":"pf-section pf-bg-dark","style":{"borderBottom":"none"},"children":["$","div",null,{"className":"pf-section-inner","style":{"paddingTop":"50px","display":"grid","gridTemplateColumns":"1fr 1fr","gap":"80px","alignItems":"center"},"children":[["$","div",null,{"className":"fade-in-up","children":["$L6","$L7","$L8","$L9","$La"]}],"$Lb"]}]}],"$Lc","$Ld","$Le","$Lf","$L10","$L11"],["$L12","$L13"],"$L14"]}],{},null,false,null]},null,false,"$15"]},null,false,null],"$L16",false]],"m":"$undefined","G":["$17",["$L18"]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"D9_hwIsUKhbgCS-udqFl1"}
+1d:I[97367,["/_next/static/chunks/0xf2p-q7l_gol.js"],"OutletBoundary"]
+1e:"$Sreact.suspense"
+20:I[97367,["/_next/static/chunks/0xf2p-q7l_gol.js"],"ViewportBoundary"]
+22:I[97367,["/_next/static/chunks/0xf2p-q7l_gol.js"],"MetadataBoundary"]
+:HL["/assets/images/64f693e5dc798cedf9cdac47_Asset 4@8x 1-top.png","image"]
+:HL["/assets/images/64f899eab46bd2c842817ee8_image 6-top.png","image"]
+:HL["/assets/images/placeholder_resort.webp","image"]
+:HL["/assets/images/placeholder_hotel.webp","image"]
+:HL["/assets/images/placeholder_landscape.webp","image"]
+6:["$","div",null,{"className":"pf-eyebrow","children":"WEBSITES × SEO × DIGITAL GROWTH"}]
+7:["$","h1",null,{"className":"pf-hero-title","children":["Building Brands",["$","br",null,{}],"That ",["$","span",null,{"children":"Get Found"}]]}]
+8:["$","p",null,{"className":"pf-hero-desc","children":"Professional web development and SEO services in Wayanad, Kerala — helping local businesses grow online with real results."}]
+9:["$","div",null,{"style":{"display":"flex","gap":"20px"},"children":[["$","a",null,{"href":"#contact","className":"pf-btn-primary","style":{"color":"#fff"},"children":"Start Your Project →"}],["$","a",null,{"href":"#about","className":"pf-btn-outline","children":"Learn More"}]]}]
+a:["$","div",null,{"className":"pf-hero-stats fade-in-up delay-2","children":[["$","div",null,{"children":[["$","div",null,{"className":"pf-stat-num","children":"150+"}],["$","div",null,{"className":"pf-stat-label","children":"Websites Developed"}]]}],["$","div",null,{"children":[["$","div",null,{"className":"pf-stat-num","children":"25+"}],["$","div",null,{"className":"pf-stat-label","children":"Websites Audited"}]]}],["$","div",null,{"children":[["$","div",null,{"className":"pf-stat-num","children":"90%"}],["$","div",null,{"className":"pf-stat-label","children":"Performance Improved"}]]}]]}]
+b:["$","div",null,{"className":"pf-hero-card fade-in-up delay-1","children":[["$","div",null,{"className":"pf-hero-card-overlay"}],["$","div",null,{"className":"pf-cursive-accent","children":["Ideas",["$","br",null,{}],"Websites",["$","br",null,{}],"SEO",["$","br",null,{}],"Growth"]}],["$","div",null,{"style":{"position":"absolute","bottom":"30px","right":"30px","background":"rgba(0,0,0,0.6)","backdropFilter":"blur(10px)","padding":"15px 25px","borderRadius":"12px","display":"flex","alignItems":"center","gap":"15px","border":"1px solid rgba(255,255,255,0.1)"},"children":[["$","div",null,{"className":"pf-icon-circle","children":"⭐"}],["$","div",null,{"style":{"fontSize":"0.9rem","maxWidth":"150px"},"children":"Turning local businesses into market leaders."}]]}]]}]
+c:["$","div",null,{"className":"fade-in-up pf-bg-light","style":{"padding":"40px 0","overflow":"hidden","position":"relative","borderBottom":"1px solid rgba(0,0,0,0.1)"},"children":[["$","div",null,{"style":{"position":"absolute","left":"0","top":"0","bottom":"0","background":"linear-gradient(to right, var(--pf-bg) 80%, transparent)","display":"flex","alignItems":"center","padding":"0 40px","zIndex":"10"},"children":["$","span",null,{"style":{"fontSize":"0.8rem","letterSpacing":"2px","color":"var(--pf-text-secondary)","whiteSpace":"nowrap","fontWeight":"500"},"children":"TRUSTED BY AMAZING BRANDS"}]}],["$","div",null,{"className":"pf-marquee-track","style":{"marginLeft":"300px"},"children":[["$","div",null,{"style":{"display":"flex","gap":"80px","alignItems":"center","paddingRight":"80px"},"children":[["$","img",null,{"src":"/assets/images/64f693e5dc798cedf9cdac47_Asset 4@8x 1-top.png","style":{"height":"35px","filter":"brightness(0) opacity(0.8)"}}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"Allison Resort"}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"breezeland"}],["$","img",null,{"src":"/assets/images/64f899eab46bd2c842817ee8_image 6-top.png","style":{"height":"35px","filter":"brightness(0) opacity(0.8)"}}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"Silent Slopes"}]]}],["$","div",null,{"style":{"display":"flex","gap":"80px","alignItems":"center","paddingRight":"80px"},"children":[["$","img",null,{"src":"/assets/images/64f693e5dc798cedf9cdac47_Asset 4@8x 1-top.png","style":{"height":"35px","filter":"brightness(0) opacity(0.8)"}}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"Allison Resort"}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"breezeland"}],["$","img",null,{"src":"/assets/images/64f899eab46bd2c842817ee8_image 6-top.png","style":{"height":"35px","filter":"brightness(0) opacity(0.8)"}}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"Silent Slopes"}]]}],["$","div",null,{"style":{"display":"flex","gap":"80px","alignItems":"center","paddingRight":"80px"},"children":[["$","img",null,{"src":"/assets/images/64f693e5dc798cedf9cdac47_Asset 4@8x 1-top.png","style":{"height":"35px","filter":"brightness(0) opacity(0.8)"}}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"Allison Resort"}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"breezeland"}],["$","img",null,{"src":"/assets/images/64f899eab46bd2c842817ee8_image 6-top.png","style":{"height":"35px","filter":"brightness(0) opacity(0.8)"}}],["$","span",null,{"style":{"fontSize":"1.5rem","fontWeight":"700"},"children":"Silent Slopes"}]]}]]}]]}]
+d:["$","section",null,{"id":"about","className":"pf-section pf-bg-light","children":["$","div",null,{"className":"pf-section-inner","children":["$","div",null,{"className":"pf-about-grid","children":[["$","div",null,{"className":"fade-in-up","children":[["$","div",null,{"className":"pf-eyebrow","children":"ABOUT ME"}],["$","h2",null,{"className":"pf-hero-title","style":{"fontSize":"3.5rem"},"children":["Hey Again 👋",["$","br",null,{}],"Here's a Little About Me"]}],["$","p",null,{"className":"pf-hero-desc","children":["I'm ",["$","strong",null,{"children":"Muhammed Abdulla"}],", a Web Developer and SEO Expert in Wayanad, Kerala. I create modern websites and SEO strategies that help businesses get more visibility, attract real customers, and grow online."]}],["$","p",null,{"className":"pf-hero-desc","children":"Simply put, I build websites that look great, work efficiently, and rank higher on Google."}],["$","a",null,{"href":"/about","className":"pf-btn-primary","style":{"marginTop":"20px"},"children":"More About Me →"}]]}],["$","div",null,{"className":"fade-in-up delay-1","style":{"display":"flex","gap":"40px","alignItems":"center"},"children":[["$","div",null,{"className":"pf-card-list","children":[["$","div",null,{"className":"pf-list-item","children":[["$","div",null,{"className":"pf-icon-circle","children":"💼"}],["$","div",null,{"children":[["$","div",null,{"className":"pf-stat-label","children":"Experience"}],["$","div",null,{"style":{"fontWeight":"600"},"children":"3+ Years"}]]}]]}],["$","div",null,{"className":"pf-list-item","children":[["$","div",null,{"className":"pf-icon-circle","children":"📍"}],["$","div",null,{"children":[["$","div",null,{"className":"pf-stat-label","children":"Based in"}],["$","div",null,{"style":{"fontWeight":"600"},"children":"Wayanad, Kerala"}]]}]]}],["$","div",null,{"className":"pf-list-item","children":[["$","div",null,{"className":"pf-icon-circle","children":"🎯"}],["$","div",null,{"children":[["$","div",null,{"className":"pf-stat-label","children":"Focus"}],["$","div",null,{"style":{"fontWeight":"600"},"children":"Results Driven"}]]}]]}],["$","div",null,{"className":"pf-list-item","children":[["$","div",null,{"className":"pf-icon-circle","children":"⚡"}],["$","div",null,{"children":[["$","div",null,{"className":"pf-stat-label","children":"Available for"}],["$","div",null,{"style":{"fontWeight":"600"},"children":"New Projects"}]]}]]}]]}],["$","div",null,{"style":{"fontFamily":"'Brush Script MT', cursive","color":"#444","fontSize":"2.2rem","lineHeight":"1.3"},"children":["\"Quality",["$","br",null,{}],"Over Quantity.",["$","br",null,{}],"Your Success",["$","br",null,{}],"is My Priority.\"",["$","br",null,{}],["$","span",null,{"style":{"fontFamily":"Inter, sans-serif","fontSize":"0.7rem","letterSpacing":"2px","color":"#666","textTransform":"uppercase"},"children":"Muhammed Abdulla"}]]}]]}]]}]}]}]
+e:["$","section",null,{"className":"pf-section pf-bg-dark-creme","children":["$","div",null,{"className":"pf-section-inner","children":[["$","div",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"flex-end"},"children":[["$","div",null,{"children":[["$","div",null,{"className":"pf-eyebrow","children":"WHAT I DO"}],["$","h2",null,{"className":"pf-hero-title","style":{"fontSize":"3rem","margin":"0"},"children":["How I Can Help",["$","br",null,{}],"Your Business Grow"]}]]}],["$","p",null,{"className":"pf-hero-desc","style":{"margin":"0","maxWidth":"400px","textAlign":"right"},"children":"Professional web development and SEO services designed to improve visibility, attract customers, and deliver measurable results."}]]}],["$","div",null,{"className":"pf-services-grid","children":[["$","div",null,{"className":"pf-service-card fade-in-up","children":[["$","div",null,{"className":"pf-icon-circle","style":{"marginBottom":"40px"},"children":"</>"}],["$","div",null,{"className":"pf-arrow-top-right","children":"→"}],["$","h3",null,{"style":{"fontSize":"1.4rem","marginBottom":"15px"},"children":["Custom Website",["$","br",null,{}],"Creation"]}],["$","p",null,{"className":"pf-stat-label","children":"Fast, modern and mobile-friendly websites tailored to your business needs."}]]}],["$","div",null,{"className":"pf-service-card fade-in-up delay-1","children":[["$","div",null,{"className":"pf-icon-circle","style":{"marginBottom":"40px"},"children":"🔍"}],["$","div",null,{"className":"pf-arrow-top-right","children":"→"}],["$","h3",null,{"style":{"fontSize":"1.4rem","marginBottom":"15px"},"children":["Search Engine",["$","br",null,{}],"Optimization"]}],["$","p",null,{"className":"pf-stat-label","children":"SEO strategies to help your website rank higher on Google."}]]}],["$","div",null,{"className":"pf-service-card fade-in-up delay-2","children":[["$","div",null,{"className":"pf-icon-circle","style":{"marginBottom":"40px"},"children":"💻"}],["$","div",null,{"className":"pf-arrow-top-right","children":"→"}],["$","h3",null,{"style":{"fontSize":"1.4rem","marginBottom":"15px"},"children":["Website Health",["$","br",null,{}],"Checkups"]}],["$","p",null,{"className":"pf-stat-label","children":"Detailed analysis to find and fix issues that affect your rankings."}]]}],["$","div",null,{"className":"pf-service-card fade-in-up delay-3","children":[["$","div",null,{"className":"pf-icon-circle","style":{"marginBottom":"40px"},"children":"📊"}],["$","div",null,{"className":"pf-arrow-top-right","children":"→"}],["$","h3",null,{"style":{"fontSize":"1.4rem","marginBottom":"15px"},"children":["Results Tracking",["$","br",null,{}],"& Reports"]}],["$","p",null,{"className":"pf-stat-label","children":"Monthly reports with clear insights and actionable recommendations."}]]}]]}]]}]}]
+19:T10d7,
+        .pf-brand-card {
+            border-radius: 12px; 
+            aspect-ratio: 1.1/1; 
+            display:flex; 
+            flex-direction: column;
+            align-items:center; justify-content:center; 
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 0;
+            overflow: hidden;
+            cursor: pointer;
+            line-height: 1.2;
+        }
+        .pf-brand-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .pf-brand-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 15px; }
+        @media(max-width: 900px) { .pf-brand-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; } }
+        @media(max-width: 600px) { .pf-brand-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } }
+        
+
+
+
+
+/* True Bubble Heading Overlay CSS */
+.hover-expand-card {
+    border-radius: 50px !important;
+    max-height: 75px !important; 
+    width: max-content !important;
+    max-width: 90% !important;
+    padding: 15px 30px !important; 
+    margin: 0 auto;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    cursor: pointer;
+    background: #fff !important; 
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hover-expand-card:hover {
+    border-radius: 24px !important;
+    max-height: 800px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 32px !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    background: #F5F2EC !important;
+}
+
+/* Force the top row to display the badge and brand */
+.hover-expand-card .ss-card-top {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: max-content !important; 
+}
+.hover-expand-card:hover .ss-card-top {
+    width: 100% !important;
+}
+
+/* Force explicitly visibility on the texts */
+.hover-expand-card .ss-pill,
+.hover-expand-card .ss-brand {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    margin: 0 !important;
+    transform: none !important;
+    color: #111 !important; /* Force color so it's impossible to be white */
+    white-space: nowrap !important; /* Prevent text from disappearing due to wrapping */
+}
+
+/* Hide body in small state */
+.hover-expand-card .ss-card-body {
+    display: none !important; 
+    opacity: 0;
+    visibility: hidden;
+}
+/* Re-show body on hover */
+.hover-expand-card:hover .ss-card-body {
+    display: flex !important; 
+    opacity: 1;
+    visibility: visible;
+    margin-top: 24px;
+    animation: slideUpFade 0.4s ease forwards;
+}
+
+@keyframes slideUpFade {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Header Creme Theme Overrides */
+.portfolio-creme-theme .floating-header .header-inner {
+    background: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
+}
+
+.portfolio-creme-theme .floating-header .logo img {
+    filter: invert(1) !important; /* Turns the white logo black */
+    opacity: 0.8;
+}
+
+.portfolio-creme-theme .floating-header .main-nav a {
+    color: #1A1A1A !important;
+    font-weight: 500 !important;
+    opacity: 0.7;
+}
+
+.portfolio-creme-theme .floating-header .main-nav a:hover {
+    opacity: 1;
+}
+
+.portfolio-creme-theme .floating-header .nav-dot {
+    background-color: var(--pf-accent) !important; /* Make it purple instead of green for the creme theme */
+    box-shadow: 0 0 8px var(--pf-accent) !important;
+}
+
+.portfolio-creme-theme .floating-header .btn-nav-outline {
+    color: #1A1A1A !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+.portfolio-creme-theme .floating-header .btn-nav-outline:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+}
+
+f:["$","section",null,{"className":"pf-section pf-bg-light","children":["$","div",null,{"className":"pf-section-inner","children":[["$","div",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"flex-end"},"children":[["$","div",null,{"children":[["$","div",null,{"className":"pf-eyebrow","children":"FEATURED WORK"}],["$","h2",null,{"className":"pf-hero-title","style":{"fontSize":"3rem","margin":"0"},"children":["A Glimpse of",["$","br",null,{}],"My Recent Projects"]}]]}],["$","p",null,{"className":"pf-hero-desc","style":{"margin":"0","maxWidth":"400px","textAlign":"right"},"children":"Real businesses. Real results. Explore some of the websites and campaigns I've worked on."}]]}],["$","div",null,{"className":"pf-work-grid","children":[["$","div",null,{"className":"pf-work-card","children":[["$","img",null,{"src":"/assets/images/placeholder_resort.webp","className":"pf-work-img"}],["$","div",null,{"className":"pf-work-overlay","children":[["$","h3",null,{"style":{"fontSize":"1.5rem","marginBottom":"5px"},"children":"PencilHub"}],["$","div",null,{"className":"pf-stat-label","children":"Website Development"}],["$","div",null,{"className":"pf-icon-circle","style":{"position":"absolute","bottom":"30px","right":"30px","border":"1px solid rgba(255,255,255,0.2)"},"children":"→"}]]}]]}],["$","div",null,{"className":"pf-work-card","children":[["$","img",null,{"src":"/assets/images/placeholder_hotel.webp","className":"pf-work-img"}],["$","div",null,{"className":"pf-work-overlay","children":[["$","h3",null,{"style":{"fontSize":"1.5rem","marginBottom":"5px"},"children":"Skillogo"}],["$","div",null,{"className":"pf-stat-label","children":"Website Development"}],["$","div",null,{"className":"pf-icon-circle","style":{"position":"absolute","bottom":"30px","right":"30px","border":"1px solid rgba(255,255,255,0.2)"},"children":"→"}]]}]]}],["$","div",null,{"className":"pf-work-card","children":[["$","img",null,{"src":"/assets/images/placeholder_landscape.webp","className":"pf-work-img"}],["$","div",null,{"className":"pf-work-overlay","children":[["$","h3",null,{"style":{"fontSize":"1.5rem","marginBottom":"5px"},"children":"Silent Slopes Resort"}],["$","div",null,{"className":"pf-stat-label","children":"Website + SEO"}],["$","div",null,{"className":"pf-icon-circle","style":{"position":"absolute","bottom":"30px","right":"30px","border":"1px solid rgba(255,255,255,0.2)"},"children":"→"}]]}]]}]]}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$19"}}],"$L1a"]}]}]
+10:["$","section",null,{"id":"work","className":"case-studies-section","children":["$","div",null,{"className":"pf-section-inner","children":["$","div",null,{"className":"case-studies-container","children":[["$","div",null,{"className":"cs-header fade-in-up","children":[["$","div",null,{"className":"cs-eyebrow","children":[["$","span",null,{"className":"cs-indicator"}]," WORK & IMPACT"]}],["$","h2",null,{"className":"cs-heading","children":["Recent ",["$","span",null,{"className":"cs-highlight","children":"Case Studies"}]]}],["$","p",null,{"className":"cs-description","children":"A selection of websites, campaigns and digital work built to create measurable business growth."}]]}],["$","div",null,{"className":"cs-filters fade-in delay-1","children":[["$","a",null,{"href":"#all","className":"cs-filter active","data-filter":"all","children":"ALL WORK"}],["$","a",null,{"href":"#web","className":"cs-filter","data-filter":"web","children":"WEB DEVELOPMENT"}],["$","a",null,{"href":"#performance","className":"cs-filter","data-filter":"performance","children":"PERFORMANCE MARKETING"}],["$","a",null,{"href":"#social","className":"cs-filter","data-filter":"social","children":"CONTENT & PRODUCTION"}]]}],["$","div",null,{"id":"cs-grid","className":"cs-grid"}]]}]}]}]
+11:["$","footer",null,{"className":"modern-faizur-footer","children":["$","div",null,{"className":"footer-card-wrapper","children":["$","div",null,{"className":"footer-card-inner","children":[["$","div",null,{"className":"footer-top-grid","children":[["$","div",null,{"className":"footer-col footer-col-bio","children":["$","p",null,{"className":"footer-bio-text","children":"Abdulla is independent performance marketer and digital growth strategist"}]}],["$","div",null,{"className":"footer-col footer-col-links","children":[["$","span",null,{"className":"col-heading","children":"Explore"}],["$","ul",null,{"className":"footer-nav-list","children":[["$","li",null,{"children":["$","a",null,{"href":"/about","children":"Bio"}]}],["$","li",null,{"children":["$","a",null,{"href":"/#work","children":"Work"}]}],["$","li",null,{"children":["$","a",null,{"href":"/#services","children":"Services"}]}],["$","li",null,{"children":["$","a",null,{"href":"/#contact","children":"Contact"}]}]]}]]}],["$","div",null,{"className":"footer-col footer-col-social","children":[["$","span",null,{"className":"col-heading","children":"Follow me"}],["$","div",null,{"className":"footer-social-grid","children":[["$","a",null,{"href":"https://x.com","target":"_blank","className":"social-item","children":[["$","span",null,{"className":"social-icon","children":"𝕏"}]," @brandwithabdulla"]}],["$","a",null,{"href":"https://instagram.com","target":"_blank","className":"social-item","children":[["$","span",null,{"className":"social-icon-ig","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","children":[["$","rect",null,{"x":"2","y":"2","width":"20","height":"20","rx":"5","ry":"5"}],["$","path",null,{"d":"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"}],["$","line",null,{"x1":"17.5","y1":"6.5","x2":"17.51","y2":"6.5"}]]}]}]," @brandwithabdulla"]}],["$","a",null,{"href":"https://linkedin.com","target":"_blank","className":"social-item","children":[["$","span",null,{"className":"social-icon-li","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"currentColor","children":["$","path",null,{"d":"M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"}]}]}]," @brandwithabdulla"]}],["$","a",null,{"href":"https://youtube.com","target":"_blank","className":"social-item","children":[["$","span",null,{"className":"social-icon-yt","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"currentColor","children":["$","path",null,{"d":"M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"}]}]}]," @brandwithabdulla"]}]]}]]}],["$","div",null,{"className":"footer-col footer-col-actions","children":[["$","a",null,{"href":"tel:+919000000000","className":"footer-cta-block cta-call","children":[["$","div",null,{"className":"cta-header","children":[["$","span",null,{"className":"cta-title","children":"Call Abdulla"}],["$","span",null,{"className":"cta-badge-arrow red-arrow","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","path",null,{"d":"M7 17L17 7M17 7H7M17 7V17"}]}]}]]}],["$","span",null,{"className":"cta-subtitle text-red","children":"Let's work together"}]]}],["$","a",null,{"href":"/#services","className":"footer-cta-block cta-tools","children":[["$","div",null,{"className":"cta-header","children":[["$","span",null,{"className":"cta-title","children":"Courses & Tools"}],["$","span",null,{"className":"cta-badge-arrow dark-arrow","children":["$","svg",null,{"width":"14","height":"14","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","children":["$","path",null,{"d":"M7 17L17 7M17 7H7M17 7V17"}]}]}]]}],["$","span",null,{"className":"cta-subtitle text-muted","children":"Creative tools & mentoring"}]]}]]}]]}],"$L1b","$L1c"]}]}]}]
+12:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0r83za5dl7nov.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+13:["$","script","script-0",{"src":"/_next/static/chunks/22i43cg4l4-dq.js","async":true,"nonce":"$undefined"}]
+14:["$","$L1d",null,{"children":["$","$1e",null,{"name":"Next.MetadataOutlet","children":"$@1f"}]}]
+16:["$","$1","h",{"children":[null,["$","$L20",null,{"children":"$L21"}],["$","div",null,{"hidden":true,"children":["$","$L22",null,{"children":["$","$1e",null,{"name":"Next.Metadata","children":"$L23"}]}]}],null]}]
+18:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0fknp9y7cq1ph.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+:HL["/assets/logo/2.webp","image"]
+:HL["/assets/logo/2_1.webp","image"]
+:HL["/assets/logo/adzone.webp","image"]
+:HL["/assets/logo/adzone_1.webp","image"]
+:HL["/assets/logo/career-1.png","image"]
+:HL["/assets/logo/career-2.webp","image"]
+:HL["/assets/logo/career-3.webp","image"]
+:HL["/assets/logo/career-4.webp","image"]
+:HL["/assets/logo/career-5.webp","image"]
+:HL["/assets/logo/career_1.webp","image"]
+:HL["/assets/logo/ever_consutruction-1_1.webp","image"]
+:HL["/assets/logo/hexad-2.webp","image"]
+:HL["/assets/logo/hexad.webp","image"]
+:HL["/assets/logo/mountain-vibes.webp","image"]
+:HL["/assets/logo/partho-5.webp","image"]
+:HL["/assets/logo/partho-6.webp","image"]
+15:C
+1a:["$","div",null,{"style":{"marginTop":"80px","textAlign":"center"},"children":[["$","div",null,{"className":"pf-eyebrow","children":"CONTACT"}],["$","h2",null,{"className":"pf-hero-title","style":{"fontSize":"2.5rem","marginBottom":"40px"},"children":["Featured ",["$","span",null,{"style":{"color":"var(--pf-accent)"},"children":"BRANDS"}]]}],["$","div",null,{"className":"pf-brand-grid","children":[["$","div",null,{"className":"pf-brand-card","style":{"background":"#DEFE00","color":"#000"},"children":["$","img",null,{"src":"/assets/logo/2.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#223E50","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/2_1.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#fff","color":"#000","border":"1px solid #ddd"},"children":["$","img",null,{"src":"/assets/logo/adzone.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#B38031","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/adzone_1.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#1B7171","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/career-1.png","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#E1E0CD","color":"#000"},"children":["$","img",null,{"src":"/assets/logo/career-2.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#0F52FF","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/career-3.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#fff","color":"#000","border":"1px solid #ddd"},"children":["$","img",null,{"src":"/assets/logo/career-4.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#85C02B","color":"#000"},"children":["$","img",null,{"src":"/assets/logo/career-5.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#12529E","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/career_1.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#07333C","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/ever_consutruction-1_1.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#1C0A09","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/hexad-2.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#0F3A1D","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/hexad.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#BCBCBC","color":"#000"},"children":["$","img",null,{"src":"/assets/logo/mountain-vibes.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#0F284B","color":"#fff"},"children":["$","img",null,{"src":"/assets/logo/partho-5.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#4A110D","color":"#FACC80","fontFamily":"'Cormorant Garamond', serif","fontSize":"1.8rem","fontStyle":"italic"},"children":["$","img",null,{"src":"/assets/logo/partho-6.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}],["$","div",null,{"className":"pf-brand-card","style":{"background":"#0D1F38","color":"#fff"},"children":"$L24"}],"$L25","$L26","$L27","$L28","$L29","$L2a","$L2b"]}]]}]
+2c:I[27201,["/_next/static/chunks/0xf2p-q7l_gol.js"],"IconMark"]
+:HL["/assets/logo/pastel-1.webp","image"]
+:HL["/assets/logo/pastel-10.webp","image"]
+:HL["/assets/logo/pastel-2.webp","image"]
+:HL["/assets/logo/pastel-3.webp","image"]
+:HL["/assets/logo/pastel-8_1.webp","image"]
+:HL["/assets/logo/pastel-9.webp","image"]
+:HL["/assets/logo/pastel.webp","image"]
+:HL["/assets/logo/peralserence.webp","image"]
+1b:["$","div",null,{"className":"footer-display-brand","children":["$","span",null,{"className":"brand-huge-text","children":"abdulla"}]}]
+1c:["$","div",null,{"className":"footer-bottom-bar","children":[["$","div",null,{"className":"bottom-left","children":[["$","span",null,{"children":"Abdulla ©2026"}],["$","a",null,{"href":"/#privacy","className":"footer-sub-link","children":"Privacy Policy"}]]}],["$","div",null,{"className":"bottom-right","children":["$","span",null,{"id":"footer-location-time","children":"Kerala   10:24 PM   28°C ☁"}]}]]}]
+24:["$","img",null,{"src":"/assets/logo/pastel-1.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]
+25:["$","div",null,{"className":"pf-brand-card","style":{"background":"#fff","color":"#000","border":"1px solid #ddd"},"children":["$","img",null,{"src":"/assets/logo/pastel-10.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}]
+26:["$","div",null,{"className":"pf-brand-card","style":{"background":"#FAD2CC","color":"#6E38FF","fontFamily":"'Brush Script MT', cursive","fontSize":"2rem"},"children":["$","img",null,{"src":"/assets/logo/pastel-2.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}]
+27:["$","div",null,{"className":"pf-brand-card","style":{"background":"#116FBC","color":"#fff","fontSize":"2rem","fontFamily":"'Times New Roman', serif"},"children":["$","img",null,{"src":"/assets/logo/pastel-3.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}]
+28:["$","div",null,{"className":"pf-brand-card","style":{"background":"#13120E","color":"#78923F"},"children":["$","img",null,{"src":"/assets/logo/pastel-8_1.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}]
+29:["$","div",null,{"className":"pf-brand-card","style":{"background":"#1C100C","color":"#3ABB69","fontSize":"1rem"},"children":["$","img",null,{"src":"/assets/logo/pastel-9.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}]
+2a:["$","div",null,{"className":"pf-brand-card","style":{"background":"#fff","color":"#000","border":"1px solid #ddd"},"children":["$","img",null,{"src":"/assets/logo/pastel.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}]
+2b:["$","div",null,{"className":"pf-brand-card","style":{"background":"#10392C","color":"#fff","fontFamily":"'Cormorant Garamond', serif","fontWeight":"400"},"children":["$","img",null,{"src":"/assets/logo/peralserence.webp","alt":"brand","style":{"maxWidth":"100%","maxHeight":"100%","width":"100%","height":"100%","objectFit":"cover"}}]}]
+21:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:null
+23:[["$","title","0",{"children":"Muhammed Abdulla | Performance Marketer in Kerala"}],["$","meta","1",{"name":"description","content":"I help brands grow beyond borders."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L2c","3",{}]]

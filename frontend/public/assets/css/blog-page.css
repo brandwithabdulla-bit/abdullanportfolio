@@ -72,7 +72,7 @@
 }
 
 .blog-card-ext:hover h3 {
-    color: var(--pf-accent, #22D3EE);
+    color: var(--pf-accent, #5D18EB);
 }
 
 .blog-meta {
@@ -119,7 +119,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--pf-accent, #22D3EE);
+    background-color: var(--pf-accent, #5D18EB);
     transform: scaleX(0.3);
     transform-origin: left;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);

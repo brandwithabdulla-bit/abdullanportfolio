@@ -167,9 +167,9 @@ export default function Page() {
                 
                 {/*  Left Details  */}
                 <div className="ap-hero-content">
-                    <span className="ap-hero-label"><span className="dot-green pulsing-dot"></span> PERFORMANCE MARKETER & STRATEGIST</span>
+                    <span className="ap-hero-label"><span className="dot-green pulsing-dot"></span> PERFORMANCE MARKETER IN KERALA</span>
                     <h1 className="ap-hero-headline">Driving Growth,<br />Scaling Brands.</h1>
-                    <p className="ap-hero-desc">Welcome to my corner of the digital world! I’m Muhammed Abdulla, a Digital Marketing Strategist based in Wayanad, Kerala. What started as curiosity about how websites work turned into a career I genuinely enjoy. I help businesses grow online through smart strategies and solid execution.</p>
+                    <p className="ap-hero-desc">Welcome to my corner of the digital world! I’m Muhammed Abdulla, a Performance Marketer in Kerala. What started as curiosity about how websites work turned into a career I genuinely enjoy. I help businesses grow online through smart strategies and solid execution.</p>
                     
                     <div className="ap-hero-cta-box">
                         <div className="ap-email-capture">
@@ -208,7 +208,7 @@ export default function Page() {
                 </div>
 
                 {/*  Right Visual  */}
-                <div className="ap-hero-visual fade-in-up delay-1" style={{ backgroundImage: "url('/assets/images/portrait.webp')", backgroundPosition: "center top" }}>
+                <div className="ap-hero-visual fade-in-up delay-1" style={{ backgroundImage: "url('/assets/images/portrait.webp')", backgroundPosition: "center -75px" }}>
                     {/*  Floating Cards  */}
                     <div className="ap-floating-card ap-fc-1 parallax-item" data-speed="20">
                         <img src="/assets/images/about/strategy_card_1788516554454.png" alt="Strategy" />
@@ -245,7 +245,13 @@ export default function Page() {
                     <h2 className="ap-mission-headline">Building Scalable,<br />ROI-Driven<br /><span className="inline-icon-wrapper" style={{ background: "#6E38FF", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "68px", height: "68px", borderRadius: "50%", verticalAlign: "bottom", margin: "0 8px 8px 0", boxShadow: "0 8px 24px rgba(110,56,255,0.4)", transform: "translateY(-4px)" }}><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></span> Campaigns.</h2>
                     <p className="ap-mission-desc">Through data analysis, creative content, and unyielding execution, I empower brands to completely dominate their digital landscape and create lasting brand equity.</p>
                     <div className="ap-mission-ctas">
-                        <a href="/portfolio" className="ap-btn-dark">Explore Projects &rarr;</a>
+                        <a href="/portfolio" className="ap-btn-dark">
+                            <span>Explore Projects</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline-block", verticalAlign: "middle", transition: "transform 0.2s ease" }}>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
                         <a href="#approach" className="ap-btn-light">Learn More</a>
                     </div>
                 </div>
@@ -334,7 +340,7 @@ export default function Page() {
                 
                 <div className="ap-timeline-header">
                     <span className="ap-mission-label" style={{ color: "var(--color-accent-green)" }}><div className="dot" style={{ background: "var(--color-accent-green)" }}></div> MY JOURNEY</span>
-                    <h2 style={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>Experience & <span className="inline-icon-wrapper" style={{ background: "#FCD34D", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "44px", height: "44px", borderRadius: "50%", verticalAlign: "middle", margin: "0 12px", boxShadow: "0 5px 15px rgba(252,211,77,0.3)" }}><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span> Education</h2>
+                    <h2 style={{ display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap" }}>Experience & <span className="inline-icon-wrapper" style={{ background: "#FCD34D", display: "inline-flex", alignItems: "center", justifyContent: "center", width: "44px", height: "44px", borderRadius: "50%", verticalAlign: "middle", margin: "0 12px", boxShadow: "0 5px 15px rgba(252,211,77,0.3)" }}><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span> Education</h2>
                 </div>
 
                 <div className="ap-edu-block">

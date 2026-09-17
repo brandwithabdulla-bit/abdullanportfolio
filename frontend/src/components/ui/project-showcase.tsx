@@ -51,6 +51,8 @@ export function ProjectShowcase() {
   const containerRef = useRef<HTMLDivElement>(null)
   const animationRef = useRef<number | null>(null)
 
+  const [containerPos, setContainerPos] = useState({ left: 0, top: 0 })
+
   useEffect(() => {
     const lerp = (start: number, end: number, factor: number) => {
       return start + (end - start) * factor
@@ -76,6 +78,7 @@ export function ProjectShowcase() {
   const handleMouseMove = (e: React.MouseEvent) => {
     if (containerRef.current) {
       const rect = containerRef.current.getBoundingClientRect()
+      setContainerPos({ left: rect.left, top: rect.top })
       setMousePosition({
         x: e.clientX - rect.left,
         y: e.clientY - rect.top,
@@ -100,8 +103,8 @@ export function ProjectShowcase() {
       <div
         className="pointer-events-none fixed z-50 overflow-hidden rounded-xl shadow-2xl"
         style={{
-          left: containerRef.current?.getBoundingClientRect().left ?? 0,
-          top: containerRef.current?.getBoundingClientRect().top ?? 0,
+          left: containerPos.left,
+          top: containerPos.top,
           transform: `translate3d(${smoothPosition.x + 20}px, ${smoothPosition.y - 100}px, 0)`,
           opacity: isVisible ? 1 : 0,
           scale: isVisible ? 1 : 0.8,
